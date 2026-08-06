@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-06T07:30:52.953703+00:00",
+  "generatedAt": "2026-08-06T08:00:49.172702+00:00",
   "forecastDate": "2026-08-06",
-  "lastRunAt": "2026-08-06T07:30:52+00:00",
-  "status": "no_files",
+  "lastRunAt": "2026-08-06T08:00:48+00:00",
+  "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
   "sectors": [
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 4,
-    "losers": 11,
+    "gainers": 5,
+    "losers": 10,
     "unchanged": 0
   },
   "topGainer": {
     "symbol": "ALI",
     "name": "Ayala Land, Inc.",
     "sector": "Property",
-    "latestClose": 15.24,
+    "latestClose": 15.32,
     "predictedClose": 16.98,
-    "pctChange": 11.42,
+    "pctChange": 10.84,
     "direction": "bullish",
     "bestModel": "Lag-Informed Regression",
     "confidence": 99.6
   },
   "topLoser": {
-    "symbol": "APX",
-    "name": "Apex Mining Co., Inc.",
+    "symbol": "NIKL",
+    "name": "Nickel Asia Corporation",
     "sector": "Mining and Oil",
-    "latestClose": 15.2,
-    "predictedClose": 14.16,
-    "pctChange": -6.84,
+    "latestClose": 4.12,
+    "predictedClose": 3.88,
+    "pctChange": -5.83,
     "direction": "bearish",
     "bestModel": "Lag-Informed Regression",
-    "confidence": 99.1
+    "confidence": 99.8
   }
 }

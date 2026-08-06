@@ -1,0 +1,213 @@
+name: PSE Weekly Model Training
+
+# Heavy Training — the other half of the split pipeline (see the header
+# comment in .github/workflows/update_pipeline.yml, "Fast Pipeline", for
+# the full picture). This workflow retrains all three forecasting models
+# on whatever the Fast Pipeline has already committed to data/raw/ — it
+# does not re-fetch PDFs itself, since PSE doesn't trade on weekends, so
+# by Sunday data/raw/ is already current through Friday's close.
+#
+# Runs on GitHub Actions' own cron, once a week: Sunday 8:00 AM Philippine
+# Time (UTC+8, no DST) = Sunday 00:00 UTC. GitHub may delay scheduled runs
+# by a few minutes during periods of high load — see
+# https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
+#
+# Measured runtime across all 15 tickers (see README's "Automated
+# Pipeline" section): ARIMA's CV-based order search is the dominant cost
+# at roughly 7 min/ticker, the LSTM grid roughly 3 min/ticker — around
+# 2.5 hours total. The 350-minute timeout below leaves comfortable
+# headroom over that.
+
+on:
+  schedule:
+    - cron: "0 0 * * 0" # Sunday 00:00 UTC = Sunday 08:00 Philippine Time
+
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pse-pipeline # shared with the Fast Pipeline so they never run concurrently and race on the same commit history
+  cancel-in-progress: false
+
+jobs:
+  train-models:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+
+    env:
+      TZ: Asia/Manila
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-train-${{ hashFiles('requirements-pipeline.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-train-
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements-pipeline.txt
+
+      - name: Train all models
+        id: train
+        run: |
+          python -m services.model_selector
+
+      - name: Verify training artifacts exist
+        run: |
+          if [ ! -s best_models.json ]; then
+            echo "::error::best_models.json is missing or empty — training did not produce expected output."
+            exit 1
+          fi
+
+          shopt -s nullglob
+          files=(prediction_cache/*.json)
+
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "::error::No files found in prediction_cache/ — training did not produce expected output."
+            exit 1
+          fi
+
+          echo "best_models.json:"
+          cat best_models.json
+          echo
+          echo "Found ${#files[@]} prediction_cache file(s)."
+
+      - name: Export frontend JSON artifacts
+        run: |
+          python scripts/export_forecast_artifacts.py
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git add -A models prediction_cache best_models.json statistical_tests.json public/forecasts
+
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes detected."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Changes detected:"
+            git diff --cached --stat
+          fi
+
+      - name: Commit and push updated models
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git commit -m "Automated weekly model training ($(date '+%Y-%m-%d %H:%M'))"
+
+          git push
+
+      - name: Skip commit (no changes)
+        if: steps.changes.outputs.changed == 'false'
+        run: |
+          echo "Models are already up to date."
+
+      - name: Trigger Vercel redeploy
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          if [ -z "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}" ]; then
+            echo "::warning::VERCEL_DEPLOY_HOOK_URL secret not set — skipping frontend redeploy trigger."
+          else
+            curl --silent --show-error --request POST "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}"
+          fi
+
+      - name: Notify Telegram (Success)
+        if: success()
+        env:
+          STREAMLIT_URL: https://app-pse-stock-price-forecast-dashboard-automation-2eusess3pgag.streamlit.app/
+        run: |
+          COMMIT=$(git rev-parse --short HEAD)
+          BEST_MODELS_SUMMARY=$(python -c "import json; d=json.load(open('best_models.json')); print('\n'.join(f'• {k}: {v}' for k,v in sorted(d.items())))")
+
+          MESSAGE=$(cat <<EOF
+          🧠 *PSE Stock Price Forecast Pipeline — Weekly Training*
+          
+          ━━━━━━━━━━━━━━━━━━━━
+          
+          ✅ *Status*
+          SUCCESS
+          
+          📅 *Date*
+          $(date '+%Y-%m-%d')
+          
+          🕒 *Completed*
+          $(date '+%I:%M %p') Philippine Time
+          
+          🤖 *Best Model Per Ticker*
+          $BEST_MODELS_SUMMARY
+          
+          📊 *Statistical Tests*
+          statistical_tests.json updated (Diebold-Mariano/HLN, Friedman, Wilcoxon-Holm, consistency check)
+          
+          🔗 *Commit*
+          $COMMIT
+          
+          🔗 *GitHub Actions*
+          ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          
+          🌐 *Dashboard*
+          $STREAMLIT_URL
+          
+          ━━━━━━━━━━━━━━━━━━━━
+          
+          🚀 *Next training run: next Sunday, 8 AM PHT.*
+          EOF
+          )
+          
+          curl \
+            --silent \
+            --show-error \
+            --request POST \
+            "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            --data-urlencode "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+            --data-urlencode "parse_mode=Markdown" \
+            --data-urlencode "text=$MESSAGE"
+
+      - name: Notify Telegram (Failure)
+        if: failure()
+        run: |
+          MESSAGE=$(cat <<EOF
+          ❌ *PSE Stock Price Forecast Pipeline — Weekly Training*
+          
+          ━━━━━━━━━━━━━━━━━━━━
+          
+          Status: FAILED
+          
+          📅 Date
+          $(date '+%Y-%m-%d')
+          
+          🕒 Completed
+          $(date '+%I:%M %p') Philippine Time
+          
+          Please check the GitHub Actions logs.
+          
+          🔗 ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          EOF
+          )
+          
+          curl \
+            --silent \
+            --show-error \
+            --request POST \
+            "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            --data-urlencode "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+            --data-urlencode "parse_mode=Markdown" \
+            --data-urlencode "text=$MESSAGE"

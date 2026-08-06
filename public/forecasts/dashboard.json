@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-08-05T15:13:53.100678+00:00",
+  "forecastDate": "2026-08-05",
+  "lastRunAt": "2026-08-05T10:04:34+00:00",
+  "status": "ok",
+  "totalCompanies": 15,
+  "missingCompanies": [],
+  "sectors": [
+    {
+      "name": "Financials",
+      "count": 3
+    },
+    {
+      "name": "Industrial",
+      "count": 3
+    },
+    {
+      "name": "Mining and Oil",
+      "count": 3
+    },
+    {
+      "name": "Property",
+      "count": 3
+    },
+    {
+      "name": "Services",
+      "count": 3
+    }
+  ],
+  "marketSummary": {
+    "gainers": 4,
+    "losers": 11,
+    "unchanged": 0
+  },
+  "topGainer": {
+    "symbol": "ALI",
+    "name": "Ayala Land, Inc.",
+    "sector": "Property",
+    "latestClose": 15.24,
+    "predictedClose": 16.98,
+    "pctChange": 11.42,
+    "direction": "bullish",
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 99.6
+  },
+  "topLoser": {
+    "symbol": "APX",
+    "name": "Apex Mining Co., Inc.",
+    "sector": "Mining and Oil",
+    "latestClose": 15.2,
+    "predictedClose": 14.16,
+    "pctChange": -6.84,
+    "direction": "bearish",
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 99.1
+  }
+}

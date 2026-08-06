@@ -1,0 +1,9 @@
+# Dependency set for the Fast Pipeline (.github/workflows/update_pipeline.yml,
+# Monday-Friday, `python run_pipeline.py --no-train`): PDF ingestion only, no
+# model retraining. Deliberately excludes scikit-learn/statsmodels/torch so
+# this daily job's dependency install stays fast — those only get installed
+# once a week, by the Heavy Training workflow (requirements-pipeline.txt).
+pandas
+numpy
+pdfplumber
+requests

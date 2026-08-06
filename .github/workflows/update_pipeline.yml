@@ -1,0 +1,268 @@
+name: PSE Fast Data Pipeline
+
+# Split into two workflows so the expensive part doesn't run daily:
+#
+#   - THIS workflow (Fast Pipeline) — PDF ingestion -> data/raw/ CSVs only,
+#     via `python run_pipeline.py --no-train`. No model retraining, so it
+#     only needs pandas/numpy/pdfplumber/requests (requirements-fast.txt)
+#     and finishes in a couple of minutes. Triggered externally by
+#     Cron-job.org, Monday-Friday at 4:00 PM Philippine Time (UTC+8, no
+#     DST) — i.e. 08:00 UTC — via a repository_dispatch call:
+#
+#       URL:     https://api.github.com/repos/<OWNER>/<REPO>/dispatches
+#       Method:  POST
+#       Headers: Accept: application/vnd.github+json
+#                Authorization: Bearer <GITHUB_PAT with 'repo' + 'workflow' scope>
+#                X-GitHub-Api-Version: 2022-11-28
+#       Body:    {"event_type":"run-pipeline"}
+#
+#     Configure that as a Cron-job.org "Custom HTTP request" job with the
+#     schedule above and the GitHub PAT stored as a Cron-job.org request
+#     header (never commit it to this repo). workflow_dispatch is also kept
+#     so a maintainer can trigger the exact same run from the Actions tab.
+#
+#   - .github/workflows/train_models.yml (Heavy Training) — retrains all
+#     three forecasting models on whatever this workflow last committed to
+#     data/raw/, via `python -m services.model_selector`. Runs on GitHub
+#     Actions' own cron, once a week (Sunday 8:00 AM Philippine Time), since
+#     the paper-mandated ARIMA/LSTM CV searches take ~2.5h across all 15
+#     tickers — see that workflow file and the README's "Automated
+#     Pipeline" section for the runtime rationale.
+
+on:
+  repository_dispatch:
+    types:
+      - run-pipeline
+
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: "Optional start date override (YYYY-MM-DD)"
+        required: false
+        type: string
+
+      end_date:
+        description: "Optional end date override (YYYY-MM-DD)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pse-pipeline
+  cancel-in-progress: false
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    # PDF ingestion only (no training) — a few minutes, not hours.
+    timeout-minutes: 20
+
+    env:
+      TZ: Asia/Manila
+
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-fast-${{ hashFiles('requirements-fast.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-fast-
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements-fast.txt
+
+      - name: Run pipeline
+        id: pipeline
+        run: |
+          ARGS="--no-train"
+
+          START_DATE="${{ github.event.inputs.start_date || github.event.client_payload.start_date }}"
+          END_DATE="${{ github.event.inputs.end_date || github.event.client_payload.end_date }}"
+
+          if [ -n "$START_DATE" ]; then
+            ARGS="$ARGS --start-date $START_DATE"
+          fi
+
+          if [ -n "$END_DATE" ]; then
+            ARGS="$ARGS --end-date $END_DATE"
+          fi
+
+          python run_pipeline.py $ARGS
+
+      - name: Verify generated CSVs exist
+        run: |
+          shopt -s nullglob
+
+          files=(data/raw/*.csv)
+
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "::error::No CSV files found in data/raw/ — pipeline did not produce expected output."
+            exit 1
+          fi
+
+          echo "Found ${#files[@]} CSV file(s):"
+
+          for f in "${files[@]}"; do
+            lines=$(wc -l < "$f")
+
+            echo "  $f ($lines lines)"
+
+            if [ "$lines" -lt 2 ]; then
+              echo "::error::$f looks empty."
+              exit 1
+            fi
+          done
+
+      - name: Export frontend JSON artifacts
+        run: |
+          python scripts/export_forecast_artifacts.py
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git add -A data/raw latest_processed.json public/forecasts
+
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes detected."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Changes detected:"
+            git diff --cached --stat
+          fi
+
+      - name: Commit and push updated artifacts
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git commit -m "Automated fast pipeline run: data ($(date '+%Y-%m-%d %H:%M'))"
+
+          git push
+
+      - name: Skip commit (no changes)
+        if: steps.changes.outputs.changed == 'false'
+        run: |
+          echo "Data and models are already up to date."
+
+      - name: Trigger Vercel redeploy
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          if [ -z "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}" ]; then
+            echo "::warning::VERCEL_DEPLOY_HOOK_URL secret not set — skipping frontend redeploy trigger."
+          else
+            curl --silent --show-error --request POST "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}"
+          fi
+
+      - name: Upload pipeline log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-log
+          path: data/pdf_pipeline/pipeline.log
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Notify Telegram (Success)
+        if: success()
+        env:
+          STREAMLIT_URL: https://app-pse-stock-price-forecast-dashboard-automation-2eusess3pgag.streamlit.app/
+        run: |
+          COMMIT=$(git rev-parse --short HEAD)
+
+          MESSAGE=$(cat <<EOF
+          📈 *PSE Stock Price Forecast Pipeline — Fast (Data)*
+          
+          ━━━━━━━━━━━━━━━━━━━━
+          
+          ✅ *Status*
+          SUCCESS
+          
+          📅 *Trading Date*
+          $(date '+%Y-%m-%d')
+          
+          🕒 *Completed*
+          $(date '+%I:%M %p') Philippine Time
+          
+          🏢 *Companies Processed*
+          15
+          
+          📊 *Records Updated*
+          15 CSV files
+          
+          🤖 *Models*
+          Unchanged — retrained weekly, Sundays 8 AM PHT
+          
+          📈 *Dashboard*
+          Successfully updated
+          
+          🔗 *Commit*
+          $COMMIT
+          
+          🔗 *GitHub Actions*
+          ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          
+          🌐 *Dashboard*
+          $STREAMLIT_URL
+          
+          ━━━━━━━━━━━━━━━━━━━━
+          
+          🚀 *Streamlit dashboard is ready.*
+          EOF
+          )
+          
+          curl \
+            --silent \
+            --show-error \
+            --request POST \
+            "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            --data-urlencode "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+            --data-urlencode "parse_mode=Markdown" \
+            --data-urlencode "text=$MESSAGE"
+
+      - name: Notify Telegram (Failure)
+        if: failure()
+        run: |
+          MESSAGE=$(cat <<EOF
+          ❌ *PSE Stock Price Forecast Pipeline — Fast (Data)*
+          
+          ━━━━━━━━━━━━━━━━━━━━
+          
+          Status: FAILED
+          
+          📅 Date
+          $(date '+%Y-%m-%d')
+          
+          🕒 Completed
+          $(date '+%I:%M %p') Philippine Time
+          
+          Please check the GitHub Actions logs.
+          
+          🔗 ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          EOF
+          )
+          
+          curl \
+            --silent \
+            --show-error \
+            --request POST \
+            "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            --data-urlencode "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+            --data-urlencode "parse_mode=Markdown" \
+            --data-urlencode "text=$MESSAGE"

@@ -1,0 +1,167 @@
+[
+  {
+    "symbol": "SECB",
+    "name": "Security Bank Corporation",
+    "sector": "Financials",
+    "latestClose": 68.1,
+    "predictedClose": 67.73,
+    "pctChange": -0.54,
+    "direction": "bearish",
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 98.5
+  },
+  {
+    "symbol": "BPI",
+    "name": "Bank of the Philippine Islands",
+    "sector": "Financials",
+    "latestClose": 103.4,
+    "predictedClose": 102.57,
+    "pctChange": -0.8,
+    "direction": "bearish",
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 99.9
+  },
+  {
+    "symbol": "MBT",
+    "name": "Metropolitan Bank & Trust Co.",
+    "sector": "Financials",
+    "latestClose": 66.65,
+    "predictedClose": 65.74,
+    "pctChange": -1.37,
+    "direction": "bearish",
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 99.6
+  },
+  {
+    "symbol": "MER",
+    "name": "Manila Electric Company",
+    "sector": "Industrial",
+    "latestClose": 482.0,
+    "predictedClose": 478.28,
+    "pctChange": -0.77,
+    "direction": "bearish",
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 99.1
+  },
+  {
+    "symbol": "JFC",
+    "name": "Jollibee Foods Corporation",
+    "sector": "Industrial",
+    "latestClose": 152.5,
+    "predictedClose": 149.33,
+    "pctChange": -2.08,
+    "direction": "bearish",
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 100.0
+  },
+  {
+    "symbol": "SHLPH",
+    "name": "Pilipinas Shell Petroleum Corp.",
+    "sector": "Industrial",
+    "latestClose": 8.98,
+    "predictedClose": 8.54,
+    "pctChange": -4.9,
+    "direction": "bearish",
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 99.1
+  },
+  {
+    "symbol": "MEG",
+    "name": "Megaworld Corporation",
+    "sector": "Property",
+    "latestClose": 2.23,
+    "predictedClose": 2.22,
+    "pctChange": -0.45,
+    "direction": "bearish",
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 99.2
+  },
+  {
+    "symbol": "ALI",
+    "name": "Ayala Land, Inc.",
+    "sector": "Property",
+    "latestClose": 15.24,
+    "predictedClose": 16.98,
+    "pctChange": 11.42,
+    "direction": "bullish",
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 99.6
+  },
+  {
+    "symbol": "SMPH",
+    "name": "SM Prime Holdings, Inc.",
+    "sector": "Property",
+    "latestClose": 18.3,
+    "predictedClose": 18.12,
+    "pctChange": -0.98,
+    "direction": "bearish",
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 98.9
+  },
+  {
+    "symbol": "GLO",
+    "name": "Globe Telecom, Inc.",
+    "sector": "Services",
+    "latestClose": 1755.0,
+    "predictedClose": 1802.87,
+    "pctChange": 2.73,
+    "direction": "bullish",
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 99.4
+  },
+  {
+    "symbol": "PGOLD",
+    "name": "Puregold Price Club, Inc.",
+    "sector": "Services",
+    "latestClose": 40.0,
+    "predictedClose": 40.99,
+    "pctChange": 2.48,
+    "direction": "bullish",
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 99.5
+  },
+  {
+    "symbol": "ICT",
+    "name": "Intl. Container Terminal Services",
+    "sector": "Services",
+    "latestClose": 1005.0,
+    "predictedClose": 968.53,
+    "pctChange": -3.63,
+    "direction": "bearish",
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 99.7
+  },
+  {
+    "symbol": "APX",
+    "name": "Apex Mining Co., Inc.",
+    "sector": "Mining and Oil",
+    "latestClose": 15.2,
+    "predictedClose": 14.16,
+    "pctChange": -6.84,
+    "direction": "bearish",
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 99.1
+  },
+  {
+    "symbol": "NIKL",
+    "name": "Nickel Asia Corporation",
+    "sector": "Mining and Oil",
+    "latestClose": 4.12,
+    "predictedClose": 3.88,
+    "pctChange": -5.83,
+    "direction": "bearish",
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 99.8
+  },
+  {
+    "symbol": "SCC",
+    "name": "Semirara Mining and Power Corp.",
+    "sector": "Mining and Oil",
+    "latestClose": 20.3,
+    "predictedClose": 20.5,
+    "pctChange": 0.99,
+    "direction": "bullish",
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 99.8
+  }
+]

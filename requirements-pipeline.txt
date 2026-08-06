@@ -1,0 +1,19 @@
+# Dependency set for the Heavy Training workflow
+# (.github/workflows/train_models.yml, Sundays 8 AM PHT), which runs
+# `python -m services.model_selector` to retrain all three forecasting
+# models on whatever data/raw/ currently holds. Also useful for local
+# full-pipeline development (`python run_pipeline.py`, with training).
+#
+# The Fast Pipeline (.github/workflows/update_pipeline.yml, Monday-Friday,
+# `python run_pipeline.py --no-train`) only ingests PDFs and refreshes
+# data/raw/ — it uses the much smaller requirements-fast.txt instead, since
+# it never imports scikit-learn/statsmodels/torch.
+pandas
+numpy
+pdfplumber
+requests
+scikit-learn
+scipy
+statsmodels
+torch
+joblib

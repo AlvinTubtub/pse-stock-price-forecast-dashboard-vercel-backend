@@ -1,0 +1,779 @@
+{
+  "generatedAt": "2026-08-05T15:13:53.100678+00:00",
+  "aggregate": {
+    "Lag-Informed Regression": {
+      "rmse": 1.5015,
+      "mae": 1.0344,
+      "mase": 0.5835,
+      "r2": 0.9941
+    },
+    "ARIMA": {
+      "rmse": 38.0347,
+      "mae": 31.485,
+      "mase": 20.2788,
+      "r2": -2.5375
+    },
+    "LSTM": {
+      "rmse": 46.136,
+      "mae": 42.1924,
+      "mase": 26.9875,
+      "r2": -2.7164
+    },
+    "Naive baseline": {
+      "rmse": 4.9202,
+      "mae": 3.2129,
+      "mase": 1.0003,
+      "r2": 0.9918
+    }
+  },
+  "bestModel": "Lag-Informed Regression",
+  "worstModel": "LSTM",
+  "perCompany": {
+    "SECB": {
+      "metrics": {
+        "lag_reg": {
+          "rmse": "0.4107",
+          "mae": "0.3060",
+          "mase": "0.2283",
+          "r2": "0.9850"
+        },
+        "arima": {
+          "rmse": "10.6411",
+          "mae": "10.0591",
+          "mase": "7.3895",
+          "r2": "-8.3989"
+        },
+        "lstm": {
+          "rmse": "5.9116",
+          "mae": "3.6328",
+          "mase": "2.7876",
+          "r2": "-2.1168"
+        },
+        "naive": {
+          "rmse": "2.0302",
+          "mae": "1.2708",
+          "mase": "1.0006",
+          "r2": "0.9930"
+        }
+      },
+      "bestModel": "Lag-Informed Regression"
+    },
+    "BPI": {
+      "metrics": {
+        "lag_reg": {
+          "rmse": "0.3195",
+          "mae": "0.2144",
+          "mase": "0.1510",
+          "r2": "0.9989"
+        },
+        "arima": {
+          "rmse": "17.7368",
+          "mae": "14.9589",
+          "mase": "10.5561",
+          "r2": "-2.3180"
+        },
+        "lstm": {
+          "rmse": "4.7728",
+          "mae": "3.9269",
+          "mase": "2.9644",
+          "r2": "0.7546"
+        },
+        "naive": {
+          "rmse": "2.0120",
+          "mae": "1.4569",
+          "mase": "0.9998",
+          "r2": "0.9897"
+        }
+      },
+      "bestModel": "Lag-Informed Regression"
+    },
+    "MBT": {
+      "metrics": {
+        "lag_reg": {
+          "rmse": "0.2099",
+          "mae": "0.1502",
+          "mase": "0.1845",
+          "r2": "0.9956"
+        },
+        "arima": {
+          "rmse": "5.7696",
+          "mae": "5.1264",
+          "mase": "6.3147",
+          "r2": "-2.3025"
+        },
+        "lstm": {
+          "rmse": "2.4488",
+          "mae": "1.9031",
+          "mase": "2.4935",
+          "r2": "0.4086"
+        },
+        "naive": {
+          "rmse": "1.1296",
+          "mae": "0.8201",
+          "mase": "0.9994",
+          "r2": "0.9905"
+        }
+      },
+      "bestModel": "Lag-Informed Regression"
+    },
+    "MER": {
+      "metrics": {
+        "lag_reg": {
+          "rmse": "3.0232",
+          "mae": "2.1175",
+          "mase": "0.4481",
+          "r2": "0.9912"
+        },
+        "arima": {
+          "rmse": "57.2124",
+          "mae": "48.7659",
+          "mase": "10.3097",
+          "r2": "-2.1141"
+        },
+        "lstm": {
+          "rmse": "151.9488",
+          "mae": "149.1237",
+          "mase": "36.2214",
+          "r2": "-21.4101"
+        },
+        "naive": {
+          "rmse": "7.3653",
+          "mae": "5.1307",
+          "mase": "0.9998",
+          "r2": "0.9958"
+        }
+      },
+      "bestModel": "Lag-Informed Regression"
+    },
+    "JFC": {
+      "metrics": {
+        "lag_reg": {
+          "rmse": "0.6675",
+          "mae": "0.4580",
+          "mase": "0.1405",
+          "r2": "0.9996"
+        },
+        "arima": {
+          "rmse": "46.2313",
+          "mae": "35.5581",
+          "mase": "10.8697",
+          "r2": "-1.1026"
+        },
+        "lstm": {
+          "rmse": "13.3280",
+          "mae": "11.1063",
+          "mase": "3.5270",
+          "r2": "0.8259"
+        },
+        "naive": {
+          "rmse": "4.4349",
+          "mae": "3.2170",
+          "mase": "0.9997",
+          "r2": "0.9865"
+        }
+      },
+      "bestModel": "Lag-Informed Regression"
+    },
+    "SHLPH": {
+      "metrics": {
+        "lag_reg": {
+          "rmse": "0.2021",
+          "mae": "0.1242",
+          "mase": "0.6895",
+          "r2": "0.9909"
+        },
+        "arima": {
+          "rmse": "3.6028",
+          "mae": "2.9063",
+          "mase": "15.8061",
+          "r2": "-1.8625"
+        },
+        "lstm": {
+          "rmse": "1.8698",
+          "mae": "1.5129",
+          "mase": "7.5800",
+          "r2": "0.2229"
+        },
+        "naive": {
+          "rmse": "0.3106",
+          "mae": "0.1835",
+          "mase": "1.0038",
+          "r2": "0.9973"
+        }
+      },
+      "bestModel": "Lag-Informed Regression"
+    },
+    "MEG": {
+      "metrics": {
+        "lag_reg": {
+          "rmse": "0.0078",
+          "mae": "0.0058",
+          "mase": "0.1556",
+          "r2": "0.9915"
+        },
+        "arima": {
+          "rmse": "0.1118",
+          "mae": "0.0860",
+          "mase": "2.2808",
+          "r2": "-0.7459"
+        },
+        "lstm": {
+          "rmse": "0.0998",
+          "mae": "0.0896",
+          "mase": "2.2691",
+          "r2": "-0.3612"
+        },
+        "naive": {
+          "rmse": "0.0529",
+          "mae": "0.0350",
+          "mase": "1.0021",
+          "r2": "0.9933"
+        }
+      },
+      "bestModel": "Lag-Informed Regression"
+    },
+    "ALI": {
+      "metrics": {
+        "lag_reg": {
+          "rmse": "0.2692",
+          "mae": "0.1820",
+          "mase": "0.3283",
+          "r2": "0.9959"
+        },
+        "arima": {
+          "rmse": "7.9113",
+          "mae": "6.9396",
+          "mase": "12.5048",
+          "r2": "-2.5070"
+        },
+        "lstm": {
+          "rmse": "4.8578",
+          "mae": "4.0042",
+          "mase": "7.1045",
+          "r2": "-0.3793"
+        },
+        "naive": {
+          "rmse": "0.7264",
+          "mae": "0.5264",
+          "mase": "0.9996",
+          "r2": "0.9866"
+        }
+      },
+      "bestModel": "Lag-Informed Regression"
+    },
+    "SMPH": {
+      "metrics": {
+        "lag_reg": {
+          "rmse": "0.2056",
+          "mae": "0.1455",
+          "mase": "0.2694",
+          "r2": "0.9891"
+        },
+        "arima": {
+          "rmse": "3.7179",
+          "mae": "3.1480",
+          "mase": "5.8429",
+          "r2": "-2.5322"
+        },
+        "lstm": {
+          "rmse": "5.8449",
+          "mae": "5.5849",
+          "mase": "9.9591",
+          "r2": "-7.9047"
+        },
+        "naive": {
+          "rmse": "0.6840",
+          "mae": "0.5050",
+          "mase": "1.0001",
+          "r2": "0.9867"
+        }
+      },
+      "bestModel": "Lag-Informed Regression"
+    },
+    "GLO": {
+      "metrics": {
+        "lag_reg": {
+          "rmse": "8.6770",
+          "mae": "5.8436",
+          "mase": "0.1902",
+          "r2": "0.9937"
+        },
+        "arima": {
+          "rmse": "139.4984",
+          "mae": "119.1245",
+          "mase": "3.8808",
+          "r2": "-0.6363"
+        },
+        "lstm": {
+          "rmse": "86.9967",
+          "mae": "69.4955",
+          "mase": "2.1306",
+          "r2": "0.3725"
+        },
+        "naive": {
+          "rmse": "44.8482",
+          "mae": "28.7880",
+          "mase": "1.0000",
+          "r2": "0.9877"
+        }
+      },
+      "bestModel": "Lag-Informed Regression"
+    },
+    "PGOLD": {
+      "metrics": {
+        "lag_reg": {
+          "rmse": "0.1852",
+          "mae": "0.1177",
+          "mase": "0.2359",
+          "r2": "0.9954"
+        },
+        "arima": {
+          "rmse": "3.0101",
+          "mae": "2.3027",
+          "mase": "4.6450",
+          "r2": "-0.2296"
+        },
+        "lstm": {
+          "rmse": "1.6227",
+          "mae": "1.2233",
+          "mase": "2.4224",
+          "r2": "0.6509"
+        },
+        "naive": {
+          "rmse": "0.7450",
+          "mae": "0.5202",
+          "mase": "0.9997",
+          "r2": "0.9871"
+        }
+      },
+      "bestModel": "Lag-Informed Regression"
+    },
+    "ICT": {
+      "metrics": {
+        "lag_reg": {
+          "rmse": "7.8306",
+          "mae": "5.5451",
+          "mase": "1.4240",
+          "r2": "0.9974"
+        },
+        "arima": {
+          "rmse": "260.2829",
+          "mae": "210.4777",
+          "mase": "54.8677",
+          "r2": "-1.8878"
+        },
+        "lstm": {
+          "rmse": "401.2705",
+          "mae": "371.3754",
+          "mase": "111.7948",
+          "r2": "-5.9347"
+        },
+        "naive": {
+          "rmse": "8.4678",
+          "mae": "5.1485",
+          "mase": "1.0000",
+          "r2": "0.9981"
+        }
+      },
+      "bestModel": "Lag-Informed Regression"
+    },
+    "APX": {
+      "metrics": {
+        "lag_reg": {
+          "rmse": "0.3024",
+          "mae": "0.2032",
+          "mase": "3.8361",
+          "r2": "0.9911"
+        },
+        "arima": {
+          "rmse": "7.3895",
+          "mae": "6.6256",
+          "mase": "126.6401",
+          "r2": "-4.1001"
+        },
+        "lstm": {
+          "rmse": "9.2243",
+          "mae": "8.6841",
+          "mase": "208.8930",
+          "r2": "-7.5613"
+        },
+        "naive": {
+          "rmse": "0.2173",
+          "mae": "0.1013",
+          "mase": "0.9996",
+          "r2": "0.9972"
+        }
+      },
+      "bestModel": "Lag-Informed Regression"
+    },
+    "NIKL": {
+      "metrics": {
+        "lag_reg": {
+          "rmse": "0.0346",
+          "mae": "0.0245",
+          "mase": "0.2692",
+          "r2": "0.9978"
+        },
+        "arima": {
+          "rmse": "2.0756",
+          "mae": "1.9317",
+          "mase": "21.2593",
+          "r2": "-6.4719"
+        },
+        "lstm": {
+          "rmse": "0.2845",
+          "mae": "0.2202",
+          "mase": "2.2087",
+          "r2": "0.8441"
+        },
+        "naive": {
+          "rmse": "0.1392",
+          "mae": "0.0944",
+          "mase": "1.0000",
+          "r2": "0.9920"
+        }
+      },
+      "bestModel": "Lag-Informed Regression"
+    },
+    "SCC": {
+      "metrics": {
+        "lag_reg": {
+          "rmse": "0.1770",
+          "mae": "0.0785",
+          "mase": "0.2021",
+          "r2": "0.9980"
+        },
+        "arima": {
+          "rmse": "5.3285",
+          "mae": "4.2638",
+          "mase": "11.0153",
+          "r2": "-0.8537"
+        },
+        "lstm": {
+          "rmse": "1.5587",
+          "mae": "1.0027",
+          "mase": "2.4568",
+          "r2": "0.8424"
+        },
+        "naive": {
+          "rmse": "0.6390",
+          "mae": "0.3963",
+          "mase": "0.9997",
+          "r2": "0.9948"
+        }
+      },
+      "bestModel": "Lag-Informed Regression"
+    }
+  },
+  "statisticalTests": {
+    "best_model_consistency": {
+      "counts": {
+        "arima": 6,
+        "lag_reg": 7,
+        "lstm": 2
+      },
+      "dominant_count": 7,
+      "dominant_model": "lag_reg",
+      "min_required": 8,
+      "pass": false,
+      "total_companies": 15
+    },
+    "companies": [
+      "ALI",
+      "APX",
+      "BPI",
+      "GLO",
+      "ICT",
+      "JFC",
+      "MBT",
+      "MEG",
+      "MER",
+      "NIKL",
+      "PGOLD",
+      "SCC",
+      "SECB",
+      "SHLPH",
+      "SMPH"
+    ],
+    "diebold_mariano": {
+      "ALI": {
+        "arima vs lstm": {
+          "dm_statistic": -1.9676814830860603,
+          "holm_p_value": 0.15085743694183207,
+          "p_value": 0.05028581231394402
+        },
+        "lag_reg vs arima": {
+          "dm_statistic": 0.5959063025030348,
+          "holm_p_value": 0.5518137778937167,
+          "p_value": 0.5518137778937167
+        },
+        "lag_reg vs lstm": {
+          "dm_statistic": -1.963044655494416,
+          "holm_p_value": 0.15085743694183207,
+          "p_value": 0.05082560401922964
+        }
+      },
+      "APX": {
+        "arima vs lstm": {
+          "dm_statistic": 0.30660297218611665,
+          "holm_p_value": 1.0,
+          "p_value": 0.7594147860844109
+        },
+        "lag_reg vs arima": {
+          "dm_statistic": -1.3317019375673314,
+          "holm_p_value": 0.5527124922852094,
+          "p_value": 0.18423749742840312
+        },
+        "lag_reg vs lstm": {
+          "dm_statistic": 0.06310592926272403,
+          "holm_p_value": 1.0,
+          "p_value": 0.9497353431233715
+        }
+      },
+      "BPI": {
+        "arima vs lstm": {
+          "dm_statistic": -2.091137810520175,
+          "holm_p_value": 0.11274291801722836,
+          "p_value": 0.03758097267240945
+        },
+        "lag_reg vs arima": {
+          "dm_statistic": 0.4734947237701808,
+          "holm_p_value": 0.6362961138272261,
+          "p_value": 0.6362961138272261
+        },
+        "lag_reg vs lstm": {
+          "dm_statistic": -2.079627309331348,
+          "holm_p_value": 0.11274291801722836,
+          "p_value": 0.03863502149531595
+        }
+      },
+      "GLO": {
+        "arima vs lstm": {
+          "dm_statistic": -2.2830503047812685,
+          "holm_p_value": 0.06990983928506567,
+          "p_value": 0.0233136470647739
+        },
+        "lag_reg vs arima": {
+          "dm_statistic": -0.944682299208917,
+          "holm_p_value": 0.34578316932659736,
+          "p_value": 0.34578316932659736
+        },
+        "lag_reg vs lstm": {
+          "dm_statistic": -2.2832235120380244,
+          "holm_p_value": 0.06990983928506567,
+          "p_value": 0.023303279761688556
+        }
+      },
+      "ICT": {
+        "arima vs lstm": {
+          "dm_statistic": -0.17711541404903633,
+          "holm_p_value": 0.8595702922111321,
+          "p_value": 0.8595702922111321
+        },
+        "lag_reg vs arima": {
+          "dm_statistic": 1.7389938795959703,
+          "holm_p_value": 0.24988819345706315,
+          "p_value": 0.08334536799960013
+        },
+        "lag_reg vs lstm": {
+          "dm_statistic": 1.7392736274076686,
+          "holm_p_value": 0.24988819345706315,
+          "p_value": 0.08329606448568772
+        }
+      },
+      "JFC": {
+        "arima vs lstm": {
+          "dm_statistic": -2.2731394500034656,
+          "holm_p_value": 0.07117701325877768,
+          "p_value": 0.023913611294514192
+        },
+        "lag_reg vs arima": {
+          "dm_statistic": -0.6922173349730216,
+          "holm_p_value": 0.4894784894285946,
+          "p_value": 0.4894784894285946
+        },
+        "lag_reg vs lstm": {
+          "dm_statistic": -2.276220467959199,
+          "holm_p_value": 0.07117701325877768,
+          "p_value": 0.023725671086259226
+        }
+      },
+      "MBT": {
+        "arima vs lstm": {
+          "dm_statistic": -2.1158648374771767,
+          "holm_p_value": 0.09322072902621992,
+          "p_value": 0.035413080032411504
+        },
+        "lag_reg vs arima": {
+          "dm_statistic": -1.282142069042652,
+          "holm_p_value": 0.20106159103827848,
+          "p_value": 0.20106159103827848
+        },
+        "lag_reg vs lstm": {
+          "dm_statistic": -2.1692181738109517,
+          "holm_p_value": 0.09322072902621992,
+          "p_value": 0.031073576342073306
+        }
+      },
+      "MEG": {
+        "arima vs lstm": {
+          "dm_statistic": 0.17387227251344353,
+          "holm_p_value": 1.0,
+          "p_value": 0.8621142655609988
+        },
+        "lag_reg vs arima": {
+          "dm_statistic": -0.29889581196766535,
+          "holm_p_value": 1.0,
+          "p_value": 0.7652814624676254
+        },
+        "lag_reg vs lstm": {
+          "dm_statistic": 0.1724776770255707,
+          "holm_p_value": 1.0,
+          "p_value": 0.8632092071485964
+        }
+      },
+      "MER": {
+        "arima vs lstm": {
+          "dm_statistic": -1.756159599069609,
+          "holm_p_value": 0.21890117096420014,
+          "p_value": 0.08035279489178127
+        },
+        "lag_reg vs arima": {
+          "dm_statistic": -1.3652753050532194,
+          "holm_p_value": 0.21890117096420014,
+          "p_value": 0.17346104455854894
+        },
+        "lag_reg vs lstm": {
+          "dm_statistic": -1.8010442667126016,
+          "holm_p_value": 0.21890117096420014,
+          "p_value": 0.07296705698806671
+        }
+      },
+      "NIKL": {
+        "arima vs lstm": {
+          "dm_statistic": 0.013415167662820195,
+          "holm_p_value": 1.0,
+          "p_value": 0.9893078517949734
+        },
+        "lag_reg vs arima": {
+          "dm_statistic": 0.33923545737563376,
+          "holm_p_value": 1.0,
+          "p_value": 0.7347327586440286
+        },
+        "lag_reg vs lstm": {
+          "dm_statistic": 0.018068845502287698,
+          "holm_p_value": 1.0,
+          "p_value": 0.9855991336468173
+        }
+      },
+      "PGOLD": {
+        "arima vs lstm": {
+          "dm_statistic": -1.0308270908924106,
+          "holm_p_value": 0.9110181656804448,
+          "p_value": 0.3036727218934816
+        },
+        "lag_reg vs arima": {
+          "dm_statistic": 0.3744973800825096,
+          "holm_p_value": 0.9110181656804448,
+          "p_value": 0.7083691688725251
+        },
+        "lag_reg vs lstm": {
+          "dm_statistic": -1.0176632443466276,
+          "holm_p_value": 0.9110181656804448,
+          "p_value": 0.3098757555053504
+        }
+      },
+      "SCC": {
+        "arima vs lstm": {
+          "dm_statistic": -0.06517278689993015,
+          "holm_p_value": 1.0,
+          "p_value": 0.9480913675562834
+        },
+        "lag_reg vs arima": {
+          "dm_statistic": 0.17226734541422087,
+          "holm_p_value": 1.0,
+          "p_value": 0.8633743682373194
+        },
+        "lag_reg vs lstm": {
+          "dm_statistic": -0.058488144491264354,
+          "holm_p_value": 1.0,
+          "p_value": 0.953409090002503
+        }
+      },
+      "SECB": {
+        "arima vs lstm": {
+          "dm_statistic": -2.0144611114644593,
+          "holm_p_value": 0.1334846991238252,
+          "p_value": 0.04509093649529361
+        },
+        "lag_reg vs arima": {
+          "dm_statistic": -0.3692936855286295,
+          "holm_p_value": 0.712238559425544,
+          "p_value": 0.712238559425544
+        },
+        "lag_reg vs lstm": {
+          "dm_statistic": -2.0201321541077677,
+          "holm_p_value": 0.1334846991238252,
+          "p_value": 0.04449489970794174
+        }
+      },
+      "SHLPH": {
+        "arima vs lstm": {
+          "dm_statistic": -1.472788140029275,
+          "holm_p_value": 0.42640488862181636,
+          "p_value": 0.14213496287393879
+        },
+        "lag_reg vs arima": {
+          "dm_statistic": 0.6932863983889012,
+          "holm_p_value": 0.48880869515485315,
+          "p_value": 0.48880869515485315
+        },
+        "lag_reg vs lstm": {
+          "dm_statistic": -1.3634355461493384,
+          "holm_p_value": 0.42640488862181636,
+          "p_value": 0.1740390221863266
+        }
+      },
+      "SMPH": {
+        "arima vs lstm": {
+          "dm_statistic": -4.154813291217508,
+          "holm_p_value": 0.00013699525339938567,
+          "p_value": 4.566508446646189e-05
+        },
+        "lag_reg vs arima": {
+          "dm_statistic": 0.3994362714813811,
+          "holm_p_value": 0.6899360979695652,
+          "p_value": 0.6899360979695652
+        },
+        "lag_reg vs lstm": {
+          "dm_statistic": -4.148557804602585,
+          "holm_p_value": 0.00013699525339938567,
+          "p_value": 4.6842393988999476e-05
+        }
+      }
+    },
+    "friedman": {
+      "n_companies": 15,
+      "p_value": 0.012056132610413514,
+      "statistic": 8.83636363636363
+    },
+    "n_companies": 15,
+    "wilcoxon_holm_posthoc": {
+      "arima vs lstm": {
+        "holm_p_value": 0.005661537925527292,
+        "p_value": 0.0018871793085090975,
+        "statistic": 3.0
+      },
+      "lag_reg vs arima": {
+        "holm_p_value": 0.5524933360016062,
+        "p_value": 0.5524933360016062,
+        "statistic": 37.0
+      },
+      "lag_reg vs lstm": {
+        "holm_p_value": 0.043887329318755976,
+        "p_value": 0.021943664659377988,
+        "statistic": 16.0
+      }
+    }
+  }
+}

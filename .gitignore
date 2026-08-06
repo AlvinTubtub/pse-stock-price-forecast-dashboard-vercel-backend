@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.streamlit/
+
+# PDF pipeline working files: data/raw/*.csv is the committed source of
+# truth; staged PDFs and intermediate ETL artifacts are regenerated on
+# every run and don't need to be tracked.
+data/pdf_reports/*.pdf
+data/pdf_pipeline/

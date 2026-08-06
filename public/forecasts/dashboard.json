@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-05T15:13:53.100678+00:00",
-  "forecastDate": "2026-08-05",
-  "lastRunAt": "2026-08-05T10:04:34+00:00",
-  "status": "ok",
+  "generatedAt": "2026-08-06T05:25:57.339915+00:00",
+  "forecastDate": "2026-08-06",
+  "lastRunAt": "2026-08-06T05:25:56+00:00",
+  "status": "no_files",
   "totalCompanies": 15,
   "missingCompanies": [],
   "sectors": [

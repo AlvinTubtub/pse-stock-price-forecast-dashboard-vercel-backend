@@ -1,11 +1,11 @@
 {
-  "last_run_at": "2026-08-06T02:31:54+00:00",
+  "last_run_at": "2026-08-06T05:25:56+00:00",
   "status": "no_files",
-  "duration_seconds": 0.5,
+  "duration_seconds": 1.25,
   "pdf_count": 0,
   "record_count": 0,
   "symbols_updated": [],
   "best_models_updated": 0,
-  "triggered_by": "manual",
+  "triggered_by": "workflow_dispatch",
   "error": null
 }

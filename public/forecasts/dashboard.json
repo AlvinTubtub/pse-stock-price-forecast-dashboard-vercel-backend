@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-06T08:00:49.172702+00:00",
-  "forecastDate": "2026-08-06",
-  "lastRunAt": "2026-08-06T08:00:48+00:00",
+  "generatedAt": "2026-08-07T08:00:53.101307+00:00",
+  "forecastDate": "2026-08-07",
+  "lastRunAt": "2026-08-07T08:00:52+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,28 +28,28 @@
     }
   ],
   "marketSummary": {
-    "gainers": 5,
-    "losers": 10,
+    "gainers": 6,
+    "losers": 9,
     "unchanged": 0
   },
   "topGainer": {
-    "symbol": "ALI",
-    "name": "Ayala Land, Inc.",
-    "sector": "Property",
-    "latestClose": 15.32,
-    "predictedClose": 16.98,
-    "pctChange": 10.84,
+    "symbol": "GLO",
+    "name": "Globe Telecom, Inc.",
+    "sector": "Services",
+    "latestClose": 1725.0,
+    "predictedClose": 1802.87,
+    "pctChange": 4.51,
     "direction": "bullish",
     "bestModel": "Lag-Informed Regression",
-    "confidence": 99.6
+    "confidence": 99.4
   },
   "topLoser": {
     "symbol": "NIKL",
     "name": "Nickel Asia Corporation",
     "sector": "Mining and Oil",
-    "latestClose": 4.12,
+    "latestClose": 4.2,
     "predictedClose": 3.88,
-    "pctChange": -5.83,
+    "pctChange": -7.62,
     "direction": "bearish",
     "bestModel": "Lag-Informed Regression",
     "confidence": 99.8

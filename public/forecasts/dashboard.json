@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T08:00:53.101307+00:00",
+  "generatedAt": "2026-08-09T03:58:56.153487+00:00",
   "forecastDate": "2026-08-07",
   "lastRunAt": "2026-08-07T08:00:52+00:00",
   "status": "ok",
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 6,
-    "losers": 9,
-    "unchanged": 0
+    "gainers": 9,
+    "losers": 5,
+    "unchanged": 1
   },
   "topGainer": {
-    "symbol": "GLO",
-    "name": "Globe Telecom, Inc.",
-    "sector": "Services",
-    "latestClose": 1725.0,
-    "predictedClose": 1802.87,
-    "pctChange": 4.51,
+    "symbol": "JFC",
+    "name": "Jollibee Foods Corporation",
+    "sector": "Industrial",
+    "latestClose": 150.6,
+    "predictedClose": 150.97,
+    "pctChange": 0.25,
     "direction": "bullish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 99.4
+    "bestModel": "ARIMA",
+    "confidence": 98.4
   },
   "topLoser": {
-    "symbol": "NIKL",
-    "name": "Nickel Asia Corporation",
-    "sector": "Mining and Oil",
-    "latestClose": 4.2,
-    "predictedClose": 3.88,
-    "pctChange": -7.62,
+    "symbol": "MER",
+    "name": "Manila Electric Company",
+    "sector": "Industrial",
+    "latestClose": 494.0,
+    "predictedClose": 489.12,
+    "pctChange": -0.99,
     "direction": "bearish",
     "bestModel": "Lag-Informed Regression",
-    "confidence": 99.8
+    "confidence": 91.3
   }
 }

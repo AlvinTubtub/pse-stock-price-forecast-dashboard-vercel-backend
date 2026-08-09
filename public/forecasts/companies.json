@@ -4,164 +4,164 @@
     "name": "Security Bank Corporation",
     "sector": "Financials",
     "latestClose": 68.2,
-    "predictedClose": 67.73,
-    "pctChange": -0.69,
-    "direction": "bearish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 98.5
+    "predictedClose": 68.21,
+    "pctChange": 0.01,
+    "direction": "bullish",
+    "bestModel": "ARIMA",
+    "confidence": 90.3
   },
   {
     "symbol": "BPI",
     "name": "Bank of the Philippine Islands",
     "sector": "Financials",
     "latestClose": 101.0,
-    "predictedClose": 102.57,
-    "pctChange": 1.55,
+    "predictedClose": 101.21,
+    "pctChange": 0.21,
     "direction": "bullish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 99.9
+    "bestModel": "ARIMA",
+    "confidence": 94.3
   },
   {
     "symbol": "MBT",
     "name": "Metropolitan Bank & Trust Co.",
     "sector": "Financials",
     "latestClose": 66.2,
-    "predictedClose": 65.74,
-    "pctChange": -0.69,
-    "direction": "bearish",
+    "predictedClose": 66.32,
+    "pctChange": 0.18,
+    "direction": "bullish",
     "bestModel": "Lag-Informed Regression",
-    "confidence": 99.6
+    "confidence": 87.0
   },
   {
     "symbol": "MER",
     "name": "Manila Electric Company",
     "sector": "Industrial",
     "latestClose": 494.0,
-    "predictedClose": 478.28,
-    "pctChange": -3.18,
+    "predictedClose": 489.12,
+    "pctChange": -0.99,
     "direction": "bearish",
     "bestModel": "Lag-Informed Regression",
-    "confidence": 99.1
+    "confidence": 91.3
   },
   {
     "symbol": "JFC",
     "name": "Jollibee Foods Corporation",
     "sector": "Industrial",
     "latestClose": 150.6,
-    "predictedClose": 149.33,
-    "pctChange": -0.84,
-    "direction": "bearish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 100.0
+    "predictedClose": 150.97,
+    "pctChange": 0.25,
+    "direction": "bullish",
+    "bestModel": "ARIMA",
+    "confidence": 98.4
   },
   {
     "symbol": "SHLPH",
     "name": "Pilipinas Shell Petroleum Corp.",
     "sector": "Industrial",
     "latestClose": 9.0,
-    "predictedClose": 8.54,
-    "pctChange": -5.11,
-    "direction": "bearish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 99.1
+    "predictedClose": 9.01,
+    "pctChange": 0.11,
+    "direction": "bullish",
+    "bestModel": "ARIMA",
+    "confidence": 97.9
   },
   {
     "symbol": "MEG",
     "name": "Megaworld Corporation",
     "sector": "Property",
     "latestClose": 2.21,
-    "predictedClose": 2.22,
-    "pctChange": 0.45,
+    "predictedClose": 2.21,
+    "pctChange": 0.0,
     "direction": "bullish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 99.2
+    "bestModel": "LSTM",
+    "confidence": 90.1
   },
   {
     "symbol": "ALI",
     "name": "Ayala Land, Inc.",
     "sector": "Property",
     "latestClose": 16.26,
-    "predictedClose": 16.98,
-    "pctChange": 4.43,
-    "direction": "bullish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 99.6
+    "predictedClose": 16.24,
+    "pctChange": -0.12,
+    "direction": "bearish",
+    "bestModel": "ARIMA",
+    "confidence": 98.7
   },
   {
     "symbol": "SMPH",
     "name": "SM Prime Holdings, Inc.",
     "sector": "Property",
     "latestClose": 18.2,
-    "predictedClose": 18.12,
-    "pctChange": -0.44,
-    "direction": "bearish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 98.9
+    "predictedClose": 18.22,
+    "pctChange": 0.11,
+    "direction": "bullish",
+    "bestModel": "ARIMA",
+    "confidence": 95.6
   },
   {
     "symbol": "GLO",
     "name": "Globe Telecom, Inc.",
     "sector": "Services",
     "latestClose": 1725.0,
-    "predictedClose": 1802.87,
-    "pctChange": 4.51,
-    "direction": "bullish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 99.4
+    "predictedClose": 1724.76,
+    "pctChange": -0.01,
+    "direction": "bearish",
+    "bestModel": "ARIMA",
+    "confidence": 94.3
   },
   {
     "symbol": "PGOLD",
     "name": "Puregold Price Club, Inc.",
     "sector": "Services",
     "latestClose": 40.65,
-    "predictedClose": 40.99,
-    "pctChange": 0.84,
-    "direction": "bullish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 99.5
+    "predictedClose": 40.61,
+    "pctChange": -0.1,
+    "direction": "bearish",
+    "bestModel": "ARIMA",
+    "confidence": 89.7
   },
   {
     "symbol": "ICT",
     "name": "Intl. Container Terminal Services",
     "sector": "Services",
     "latestClose": 1000.0,
-    "predictedClose": 968.53,
-    "pctChange": -3.15,
-    "direction": "bearish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 99.7
+    "predictedClose": 1000.28,
+    "pctChange": 0.03,
+    "direction": "bullish",
+    "bestModel": "ARIMA",
+    "confidence": 98.8
   },
   {
     "symbol": "APX",
     "name": "Apex Mining Co., Inc.",
     "sector": "Mining and Oil",
     "latestClose": 14.84,
-    "predictedClose": 14.16,
-    "pctChange": -4.58,
-    "direction": "bearish",
+    "predictedClose": 14.87,
+    "pctChange": 0.2,
+    "direction": "bullish",
     "bestModel": "Lag-Informed Regression",
-    "confidence": 99.1
+    "confidence": 97.0
   },
   {
     "symbol": "NIKL",
     "name": "Nickel Asia Corporation",
     "sector": "Mining and Oil",
     "latestClose": 4.2,
-    "predictedClose": 3.88,
-    "pctChange": -7.62,
-    "direction": "bearish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 99.8
+    "predictedClose": 4.21,
+    "pctChange": 0.24,
+    "direction": "bullish",
+    "bestModel": "LSTM",
+    "confidence": 95.3
   },
   {
     "symbol": "SCC",
     "name": "Semirara Mining and Power Corp.",
     "sector": "Mining and Oil",
     "latestClose": 20.0,
-    "predictedClose": 20.5,
-    "pctChange": 2.5,
-    "direction": "bullish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 99.8
+    "predictedClose": 19.99,
+    "pctChange": -0.05,
+    "direction": "bearish",
+    "bestModel": "ARIMA",
+    "confidence": 96.3
   }
 ]

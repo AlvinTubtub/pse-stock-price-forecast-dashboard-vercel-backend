@@ -2,10 +2,10 @@
   "symbol": "BPI",
   "name": "Bank of the Philippine Islands",
   "sector": "Financials",
-  "previousClose": 103.0,
+  "previousClose": 107.5,
   "predictedClose": 101.21,
-  "pesoChange": -1.79,
-  "pctChange": -1.74,
+  "pesoChange": -6.29,
+  "pctChange": -5.85,
   "direction": "bearish",
   "model": "ARIMA",
   "confidence": 94.3,
@@ -42,14 +42,6 @@
     "lstm": 93.88
   },
   "ohlcv": [
-    {
-      "date": "2025-11-13",
-      "open": 103.0,
-      "high": 103.0,
-      "low": 101.5,
-      "close": 102.5,
-      "volume": 1314370
-    },
     {
       "date": "2025-11-14",
       "open": 102.5,
@@ -1481,6 +1473,14 @@
       "low": 99.95,
       "close": 103.0,
       "volume": 74462863
+    },
+    {
+      "date": "2026-08-12",
+      "open": 103.1,
+      "high": 107.9,
+      "low": 102.7,
+      "close": 107.5,
+      "volume": 460283939
     }
   ],
   "backtestActual": [

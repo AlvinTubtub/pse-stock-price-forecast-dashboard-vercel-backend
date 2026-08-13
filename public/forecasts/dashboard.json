@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-12T08:00:49.075428+00:00",
-  "forecastDate": "2026-08-12",
-  "lastRunAt": "2026-08-12T08:00:48+00:00",
+  "generatedAt": "2026-08-13T08:00:55.507859+00:00",
+  "forecastDate": "2026-08-13",
+  "lastRunAt": "2026-08-13T08:00:55+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 6,
-    "losers": 9,
+    "gainers": 8,
+    "losers": 7,
     "unchanged": 0
   },
   "topGainer": {
     "symbol": "SCC",
     "name": "Semirara Mining and Power Corp.",
     "sector": "Mining and Oil",
-    "latestClose": 18.44,
+    "latestClose": 18.42,
     "predictedClose": 19.99,
-    "pctChange": 8.41,
+    "pctChange": 8.52,
     "direction": "bullish",
     "bestModel": "ARIMA",
     "confidence": 96.3
   },
   "topLoser": {
-    "symbol": "SMPH",
-    "name": "SM Prime Holdings, Inc.",
-    "sector": "Property",
-    "latestClose": 19.58,
-    "predictedClose": 18.22,
-    "pctChange": -6.95,
+    "symbol": "BPI",
+    "name": "Bank of the Philippine Islands",
+    "sector": "Financials",
+    "latestClose": 106.9,
+    "predictedClose": 101.21,
+    "pctChange": -5.32,
     "direction": "bearish",
     "bestModel": "ARIMA",
-    "confidence": 95.6
+    "confidence": 94.3
   }
 }

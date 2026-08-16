@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T08:00:53.560976+00:00",
+  "generatedAt": "2026-08-16T03:05:28.084202+00:00",
   "forecastDate": "2026-08-14",
   "lastRunAt": "2026-08-14T08:00:53+00:00",
   "status": "ok",
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 7,
-    "losers": 8,
-    "unchanged": 0
+    "gainers": 4,
+    "losers": 7,
+    "unchanged": 4
   },
   "topGainer": {
-    "symbol": "SCC",
-    "name": "Semirara Mining and Power Corp.",
-    "sector": "Mining and Oil",
-    "latestClose": 18.44,
-    "predictedClose": 19.99,
-    "pctChange": 8.41,
+    "symbol": "SMPH",
+    "name": "SM Prime Holdings, Inc.",
+    "sector": "Property",
+    "latestClose": 18.28,
+    "predictedClose": 18.34,
+    "pctChange": 0.33,
     "direction": "bullish",
     "bestModel": "ARIMA",
-    "confidence": 96.3
+    "confidence": 95.3
   },
   "topLoser": {
-    "symbol": "MEG",
-    "name": "Megaworld Corporation",
-    "sector": "Property",
-    "latestClose": 2.32,
-    "predictedClose": 2.21,
-    "pctChange": -4.74,
+    "symbol": "SHLPH",
+    "name": "Pilipinas Shell Petroleum Corp.",
+    "sector": "Industrial",
+    "latestClose": 8.4,
+    "predictedClose": 8.36,
+    "pctChange": -0.48,
     "direction": "bearish",
-    "bestModel": "LSTM",
-    "confidence": 90.1
+    "bestModel": "ARIMA",
+    "confidence": 97.8
   }
 }

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-16T03:05:28.084202+00:00",
-  "forecastDate": "2026-08-14",
-  "lastRunAt": "2026-08-14T08:00:53+00:00",
+  "generatedAt": "2026-08-17T09:30:48.690452+00:00",
+  "forecastDate": "2026-08-17",
+  "lastRunAt": "2026-08-17T09:30:48+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 4,
-    "losers": 7,
-    "unchanged": 4
+    "gainers": 8,
+    "losers": 5,
+    "unchanged": 2
   },
   "topGainer": {
-    "symbol": "SMPH",
-    "name": "SM Prime Holdings, Inc.",
+    "symbol": "ALI",
+    "name": "Ayala Land, Inc.",
     "sector": "Property",
-    "latestClose": 18.28,
-    "predictedClose": 18.34,
-    "pctChange": 0.33,
+    "latestClose": 15.18,
+    "predictedClose": 15.58,
+    "pctChange": 2.64,
     "direction": "bullish",
     "bestModel": "ARIMA",
-    "confidence": 95.3
+    "confidence": 98.7
   },
   "topLoser": {
-    "symbol": "SHLPH",
-    "name": "Pilipinas Shell Petroleum Corp.",
-    "sector": "Industrial",
-    "latestClose": 8.4,
-    "predictedClose": 8.36,
-    "pctChange": -0.48,
+    "symbol": "APX",
+    "name": "Apex Mining Co., Inc.",
+    "sector": "Mining and Oil",
+    "latestClose": 14.84,
+    "predictedClose": 14.12,
+    "pctChange": -4.85,
     "direction": "bearish",
-    "bestModel": "ARIMA",
-    "confidence": 97.8
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 96.8
   }
 }

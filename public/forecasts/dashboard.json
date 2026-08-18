@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-17T09:30:48.690452+00:00",
-  "forecastDate": "2026-08-17",
-  "lastRunAt": "2026-08-17T09:30:48+00:00",
+  "generatedAt": "2026-08-18T08:00:48.804443+00:00",
+  "forecastDate": "2026-08-18",
+  "lastRunAt": "2026-08-18T08:00:48+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,28 +28,28 @@
     }
   ],
   "marketSummary": {
-    "gainers": 8,
-    "losers": 5,
-    "unchanged": 2
+    "gainers": 7,
+    "losers": 8,
+    "unchanged": 0
   },
   "topGainer": {
-    "symbol": "ALI",
-    "name": "Ayala Land, Inc.",
-    "sector": "Property",
-    "latestClose": 15.18,
-    "predictedClose": 15.58,
-    "pctChange": 2.64,
+    "symbol": "SECB",
+    "name": "Security Bank Corporation",
+    "sector": "Financials",
+    "latestClose": 65.85,
+    "predictedClose": 67.44,
+    "pctChange": 2.41,
     "direction": "bullish",
     "bestModel": "ARIMA",
-    "confidence": 98.7
+    "confidence": 90.1
   },
   "topLoser": {
     "symbol": "APX",
     "name": "Apex Mining Co., Inc.",
     "sector": "Mining and Oil",
-    "latestClose": 14.84,
+    "latestClose": 15.06,
     "predictedClose": 14.12,
-    "pctChange": -4.85,
+    "pctChange": -6.24,
     "direction": "bearish",
     "bestModel": "Lag-Informed Regression",
     "confidence": 96.8

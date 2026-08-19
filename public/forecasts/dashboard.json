@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-18T08:00:48.804443+00:00",
-  "forecastDate": "2026-08-18",
-  "lastRunAt": "2026-08-18T08:00:48+00:00",
+  "generatedAt": "2026-08-19T08:00:53.797840+00:00",
+  "forecastDate": "2026-08-19",
+  "lastRunAt": "2026-08-19T08:00:53+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 7,
-    "losers": 8,
+    "gainers": 9,
+    "losers": 6,
     "unchanged": 0
   },
   "topGainer": {
-    "symbol": "SECB",
-    "name": "Security Bank Corporation",
-    "sector": "Financials",
-    "latestClose": 65.85,
-    "predictedClose": 67.44,
-    "pctChange": 2.41,
+    "symbol": "ICT",
+    "name": "Intl. Container Terminal Services",
+    "sector": "Services",
+    "latestClose": 930.0,
+    "predictedClose": 980.75,
+    "pctChange": 5.46,
     "direction": "bullish",
     "bestModel": "ARIMA",
-    "confidence": 90.1
+    "confidence": 98.9
   },
   "topLoser": {
-    "symbol": "APX",
-    "name": "Apex Mining Co., Inc.",
-    "sector": "Mining and Oil",
-    "latestClose": 15.06,
-    "predictedClose": 14.12,
-    "pctChange": -6.24,
+    "symbol": "BPI",
+    "name": "Bank of the Philippine Islands",
+    "sector": "Financials",
+    "latestClose": 107.4,
+    "predictedClose": 104.33,
+    "pctChange": -2.86,
     "direction": "bearish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 96.8
+    "bestModel": "ARIMA",
+    "confidence": 94.0
   }
 }

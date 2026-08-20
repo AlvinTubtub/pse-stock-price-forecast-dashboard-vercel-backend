@@ -2,10 +2,10 @@
   "symbol": "MBT",
   "name": "Metropolitan Bank & Trust Co.",
   "sector": "Financials",
-  "previousClose": 67.45,
+  "previousClose": 67.7,
   "predictedClose": 68.92,
-  "pesoChange": 1.47,
-  "pctChange": 2.18,
+  "pesoChange": 1.22,
+  "pctChange": 1.8,
   "direction": "bullish",
   "model": "Lag-Informed Regression",
   "confidence": 86.8,
@@ -42,14 +42,6 @@
     "lstm": 74.22
   },
   "ohlcv": [
-    {
-      "date": "2025-11-21",
-      "open": 66.95,
-      "high": 67.8,
-      "low": 66.75,
-      "close": 67.6,
-      "volume": 4850360
-    },
     {
       "date": "2025-11-24",
       "open": 67.7,
@@ -1481,6 +1473,14 @@
       "low": 67.0,
       "close": 67.45,
       "volume": 82082911
+    },
+    {
+      "date": "2026-08-20",
+      "open": 68.2,
+      "high": 68.2,
+      "low": 67.5,
+      "close": 67.7,
+      "volume": 178383745
     }
   ],
   "backtestActual": [

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-19T08:00:53.797840+00:00",
-  "forecastDate": "2026-08-19",
-  "lastRunAt": "2026-08-19T08:00:53+00:00",
+  "generatedAt": "2026-08-20T08:00:52.284284+00:00",
+  "forecastDate": "2026-08-20",
+  "lastRunAt": "2026-08-20T08:00:51+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 9,
-    "losers": 6,
+    "gainers": 8,
+    "losers": 7,
     "unchanged": 0
   },
   "topGainer": {
-    "symbol": "ICT",
-    "name": "Intl. Container Terminal Services",
-    "sector": "Services",
-    "latestClose": 930.0,
-    "predictedClose": 980.75,
-    "pctChange": 5.46,
+    "symbol": "ALI",
+    "name": "Ayala Land, Inc.",
+    "sector": "Property",
+    "latestClose": 15.12,
+    "predictedClose": 15.58,
+    "pctChange": 3.04,
     "direction": "bullish",
     "bestModel": "ARIMA",
-    "confidence": 98.9
+    "confidence": 98.7
   },
   "topLoser": {
-    "symbol": "BPI",
-    "name": "Bank of the Philippine Islands",
-    "sector": "Financials",
-    "latestClose": 107.4,
-    "predictedClose": 104.33,
-    "pctChange": -2.86,
+    "symbol": "APX",
+    "name": "Apex Mining Co., Inc.",
+    "sector": "Mining and Oil",
+    "latestClose": 15.58,
+    "predictedClose": 14.12,
+    "pctChange": -9.37,
     "direction": "bearish",
-    "bestModel": "ARIMA",
-    "confidence": 94.0
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 96.8
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T08:00:48.792979+00:00",
+  "generatedAt": "2026-08-23T03:36:39.461762+00:00",
   "forecastDate": "2026-08-21",
   "lastRunAt": "2026-08-21T08:00:48+00:00",
   "status": "no_files",
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 8,
-    "losers": 7,
-    "unchanged": 0
+    "gainers": 5,
+    "losers": 8,
+    "unchanged": 2
   },
   "topGainer": {
-    "symbol": "ALI",
-    "name": "Ayala Land, Inc.",
-    "sector": "Property",
-    "latestClose": 15.12,
-    "predictedClose": 15.58,
-    "pctChange": 3.04,
+    "symbol": "SHLPH",
+    "name": "Pilipinas Shell Petroleum Corp.",
+    "sector": "Industrial",
+    "latestClose": 8.42,
+    "predictedClose": 8.44,
+    "pctChange": 0.24,
     "direction": "bullish",
     "bestModel": "ARIMA",
-    "confidence": 98.7
+    "confidence": 97.8
   },
   "topLoser": {
     "symbol": "APX",
     "name": "Apex Mining Co., Inc.",
     "sector": "Mining and Oil",
     "latestClose": 15.58,
-    "predictedClose": 14.12,
-    "pctChange": -9.37,
+    "predictedClose": 15.48,
+    "pctChange": -0.64,
     "direction": "bearish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 96.8
+    "bestModel": "LSTM",
+    "confidence": 96.5
   }
 }

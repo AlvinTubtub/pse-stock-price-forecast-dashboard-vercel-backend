@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-23T03:36:39.461762+00:00",
-  "forecastDate": "2026-08-21",
-  "lastRunAt": "2026-08-21T08:00:48+00:00",
-  "status": "no_files",
+  "generatedAt": "2026-08-24T09:30:48.947866+00:00",
+  "forecastDate": "2026-08-24",
+  "lastRunAt": "2026-08-24T09:30:48+00:00",
+  "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
   "sectors": [
@@ -28,28 +28,28 @@
     }
   ],
   "marketSummary": {
-    "gainers": 5,
-    "losers": 8,
-    "unchanged": 2
+    "gainers": 9,
+    "losers": 6,
+    "unchanged": 0
   },
   "topGainer": {
-    "symbol": "SHLPH",
-    "name": "Pilipinas Shell Petroleum Corp.",
-    "sector": "Industrial",
-    "latestClose": 8.42,
-    "predictedClose": 8.44,
-    "pctChange": 0.24,
+    "symbol": "GLO",
+    "name": "Globe Telecom, Inc.",
+    "sector": "Services",
+    "latestClose": 1694.0,
+    "predictedClose": 1747.9,
+    "pctChange": 3.18,
     "direction": "bullish",
-    "bestModel": "ARIMA",
-    "confidence": 97.8
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 94.4
   },
   "topLoser": {
     "symbol": "APX",
     "name": "Apex Mining Co., Inc.",
     "sector": "Mining and Oil",
-    "latestClose": 15.58,
+    "latestClose": 16.26,
     "predictedClose": 15.48,
-    "pctChange": -0.64,
+    "pctChange": -4.8,
     "direction": "bearish",
     "bestModel": "LSTM",
     "confidence": 96.5

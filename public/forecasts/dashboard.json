@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-24T09:30:48.947866+00:00",
-  "forecastDate": "2026-08-24",
-  "lastRunAt": "2026-08-24T09:30:48+00:00",
+  "generatedAt": "2026-08-25T08:00:54.338172+00:00",
+  "forecastDate": "2026-08-25",
+  "lastRunAt": "2026-08-25T08:00:53+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -36,22 +36,22 @@
     "symbol": "GLO",
     "name": "Globe Telecom, Inc.",
     "sector": "Services",
-    "latestClose": 1694.0,
+    "latestClose": 1682.0,
     "predictedClose": 1747.9,
-    "pctChange": 3.18,
+    "pctChange": 3.92,
     "direction": "bullish",
     "bestModel": "Lag-Informed Regression",
     "confidence": 94.4
   },
   "topLoser": {
-    "symbol": "APX",
-    "name": "Apex Mining Co., Inc.",
-    "sector": "Mining and Oil",
-    "latestClose": 16.26,
-    "predictedClose": 15.48,
-    "pctChange": -4.8,
+    "symbol": "ALI",
+    "name": "Ayala Land, Inc.",
+    "sector": "Property",
+    "latestClose": 15.8,
+    "predictedClose": 15.1,
+    "pctChange": -4.43,
     "direction": "bearish",
-    "bestModel": "LSTM",
-    "confidence": 96.5
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 98.6
   }
 }

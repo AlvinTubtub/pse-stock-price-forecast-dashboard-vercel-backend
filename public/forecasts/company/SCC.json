@@ -2,10 +2,10 @@
   "symbol": "SCC",
   "name": "Semirara Mining and Power Corp.",
   "sector": "Mining and Oil",
-  "previousClose": 18.4,
+  "previousClose": 18.6,
   "predictedClose": 18.73,
-  "pesoChange": 0.33,
-  "pctChange": 1.79,
+  "pesoChange": 0.13,
+  "pctChange": 0.7,
   "direction": "bullish",
   "model": "ARIMA",
   "confidence": 96.9,
@@ -42,14 +42,6 @@
     "lstm": 18.83
   },
   "ohlcv": [
-    {
-      "date": "2025-11-26",
-      "open": 29.15,
-      "high": 29.3,
-      "low": 28.9,
-      "close": 29.15,
-      "volume": 854000
-    },
     {
       "date": "2025-11-27",
       "open": 29.25,
@@ -1481,6 +1473,14 @@
       "low": 18.16,
       "close": 18.4,
       "volume": 9077696
+    },
+    {
+      "date": "2026-08-26",
+      "open": 18.6,
+      "high": 19.28,
+      "low": 18.5,
+      "close": 18.6,
+      "volume": 32487746
     }
   ],
   "backtestActual": [

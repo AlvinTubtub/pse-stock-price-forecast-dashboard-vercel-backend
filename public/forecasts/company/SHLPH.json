@@ -2,10 +2,10 @@
   "symbol": "SHLPH",
   "name": "Pilipinas Shell Petroleum Corp.",
   "sector": "Industrial",
-  "previousClose": 8.13,
+  "previousClose": 8.0,
   "predictedClose": 8.44,
-  "pesoChange": 0.31,
-  "pctChange": 3.81,
+  "pesoChange": 0.44,
+  "pctChange": 5.5,
   "direction": "bullish",
   "model": "ARIMA",
   "confidence": 97.8,
@@ -42,14 +42,6 @@
     "lstm": 8.66
   },
   "ohlcv": [
-    {
-      "date": "2025-11-27",
-      "open": 5.98,
-      "high": 6.39,
-      "low": 5.97,
-      "close": 6.0,
-      "volume": 266600
-    },
     {
       "date": "2025-11-28",
       "open": 6.0,
@@ -1481,6 +1473,14 @@
       "low": 8.11,
       "close": 8.13,
       "volume": 2489691
+    },
+    {
+      "date": "2026-08-27",
+      "open": 8.14,
+      "high": 8.28,
+      "low": 8.0,
+      "close": 8.0,
+      "volume": 4892140
     }
   ],
   "backtestActual": [

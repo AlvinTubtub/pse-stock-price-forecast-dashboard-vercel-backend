@@ -2,10 +2,10 @@
   "symbol": "JFC",
   "name": "Jollibee Foods Corporation",
   "sector": "Industrial",
-  "previousClose": 156.7,
+  "previousClose": 150.0,
   "predictedClose": 158.35,
-  "pesoChange": 1.65,
-  "pctChange": 1.05,
+  "pesoChange": 8.35,
+  "pctChange": 5.57,
   "direction": "bullish",
   "model": "ARIMA",
   "confidence": 98.3,
@@ -42,14 +42,6 @@
     "lstm": 184.66
   },
   "ohlcv": [
-    {
-      "date": "2025-11-28",
-      "open": 189.8,
-      "high": 191.5,
-      "low": 188.5,
-      "close": 189.0,
-      "volume": 780290
-    },
     {
       "date": "2025-12-01",
       "open": 189.9,
@@ -1481,6 +1473,14 @@
       "low": 156.5,
       "close": 156.7,
       "volume": 130971432
+    },
+    {
+      "date": "2026-08-28",
+      "open": 156.8,
+      "high": 158.0,
+      "low": 150.0,
+      "close": 150.0,
+      "volume": 271613270
     }
   ],
   "backtestActual": [

@@ -1,17 +1,17 @@
 {
   "ALI": "Lag-Informed Regression",
-  "APX": "LSTM",
-  "BPI": "Lag-Informed Regression",
+  "APX": "Lag-Informed Regression",
+  "BPI": "ARIMA",
   "GLO": "Lag-Informed Regression",
-  "ICT": "LSTM",
+  "ICT": "ARIMA",
   "JFC": "ARIMA",
   "MBT": "Lag-Informed Regression",
   "MEG": "LSTM",
   "MER": "Lag-Informed Regression",
-  "NIKL": "ARIMA",
+  "NIKL": "LSTM",
   "PGOLD": "ARIMA",
   "SCC": "ARIMA",
   "SECB": "Lag-Informed Regression",
   "SHLPH": "ARIMA",
-  "SMPH": "Lag-Informed Regression"
+  "SMPH": "ARIMA"
 }

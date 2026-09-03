@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-02T08:00:52.425708+00:00",
-  "forecastDate": "2026-09-02",
-  "lastRunAt": "2026-09-02T08:00:51+00:00",
+  "generatedAt": "2026-09-03T08:00:48.603304+00:00",
+  "forecastDate": "2026-09-03",
+  "lastRunAt": "2026-09-03T08:00:48+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 10,
-    "losers": 5,
+    "gainers": 6,
+    "losers": 9,
     "unchanged": 0
   },
   "topGainer": {
-    "symbol": "SHLPH",
-    "name": "Pilipinas Shell Petroleum Corp.",
-    "sector": "Industrial",
-    "latestClose": 7.7,
-    "predictedClose": 8.25,
-    "pctChange": 7.14,
+    "symbol": "ALI",
+    "name": "Ayala Land, Inc.",
+    "sector": "Property",
+    "latestClose": 15.0,
+    "predictedClose": 15.52,
+    "pctChange": 3.47,
     "direction": "bullish",
-    "bestModel": "ARIMA",
-    "confidence": 97.7
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 98.5
   },
   "topLoser": {
-    "symbol": "ICT",
-    "name": "Intl. Container Terminal Services",
-    "sector": "Services",
-    "latestClose": 932.5,
-    "predictedClose": 888.82,
-    "pctChange": -4.68,
+    "symbol": "NIKL",
+    "name": "Nickel Asia Corporation",
+    "sector": "Mining and Oil",
+    "latestClose": 4.55,
+    "predictedClose": 4.18,
+    "pctChange": -8.13,
     "direction": "bearish",
-    "bestModel": "ARIMA",
-    "confidence": 98.9
+    "bestModel": "LSTM",
+    "confidence": 94.6
   }
 }

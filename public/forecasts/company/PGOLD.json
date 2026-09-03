@@ -2,10 +2,10 @@
   "symbol": "PGOLD",
   "name": "Puregold Price Club, Inc.",
   "sector": "Services",
-  "previousClose": 40.0,
+  "previousClose": 40.5,
   "predictedClose": 40.94,
-  "pesoChange": 0.94,
-  "pctChange": 2.35,
+  "pesoChange": 0.44,
+  "pctChange": 1.09,
   "direction": "bullish",
   "model": "ARIMA",
   "confidence": 89.8,
@@ -42,14 +42,6 @@
     "lstm": 41.9
   },
   "ohlcv": [
-    {
-      "date": "2025-12-03",
-      "open": 43.0,
-      "high": 43.0,
-      "low": 41.6,
-      "close": 41.9,
-      "volume": 696400
-    },
     {
       "date": "2025-12-04",
       "open": 42.0,
@@ -1481,6 +1473,14 @@
       "low": 39.55,
       "close": 40.0,
       "volume": 30843145
+    },
+    {
+      "date": "2026-09-03",
+      "open": 40.0,
+      "high": 40.65,
+      "low": 39.9,
+      "close": 40.5,
+      "volume": 41728995
     }
   ],
   "backtestActual": [

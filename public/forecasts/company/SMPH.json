@@ -2,10 +2,10 @@
   "symbol": "SMPH",
   "name": "SM Prime Holdings, Inc.",
   "sector": "Property",
-  "previousClose": 18.3,
+  "previousClose": 18.34,
   "predictedClose": 17.84,
-  "pesoChange": -0.46,
-  "pctChange": -2.51,
+  "pesoChange": -0.5,
+  "pctChange": -2.73,
   "direction": "bearish",
   "model": "ARIMA",
   "confidence": 95.6,
@@ -42,14 +42,6 @@
     "lstm": 18.91
   },
   "ohlcv": [
-    {
-      "date": "2025-12-04",
-      "open": 22.1,
-      "high": 22.5,
-      "low": 21.7,
-      "close": 22.15,
-      "volume": 14626500
-    },
     {
       "date": "2025-12-05",
       "open": 22.1,
@@ -1481,6 +1473,14 @@
       "low": 18.14,
       "close": 18.3,
       "volume": 71975204
+    },
+    {
+      "date": "2026-09-04",
+      "open": 18.3,
+      "high": 18.38,
+      "low": 18.1,
+      "close": 18.34,
+      "volume": 28003826
     }
   ],
   "backtestActual": [

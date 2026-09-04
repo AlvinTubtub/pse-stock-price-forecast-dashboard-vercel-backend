@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T08:00:48.603304+00:00",
-  "forecastDate": "2026-09-03",
-  "lastRunAt": "2026-09-03T08:00:48+00:00",
+  "generatedAt": "2026-09-04T08:00:46.883845+00:00",
+  "forecastDate": "2026-09-04",
+  "lastRunAt": "2026-09-04T08:00:46+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,28 +28,28 @@
     }
   ],
   "marketSummary": {
-    "gainers": 6,
-    "losers": 9,
+    "gainers": 5,
+    "losers": 10,
     "unchanged": 0
   },
   "topGainer": {
-    "symbol": "ALI",
-    "name": "Ayala Land, Inc.",
-    "sector": "Property",
-    "latestClose": 15.0,
-    "predictedClose": 15.52,
-    "pctChange": 3.47,
+    "symbol": "SHLPH",
+    "name": "Pilipinas Shell Petroleum Corp.",
+    "sector": "Industrial",
+    "latestClose": 8.03,
+    "predictedClose": 8.25,
+    "pctChange": 2.74,
     "direction": "bullish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 98.5
+    "bestModel": "ARIMA",
+    "confidence": 97.7
   },
   "topLoser": {
     "symbol": "NIKL",
     "name": "Nickel Asia Corporation",
     "sector": "Mining and Oil",
-    "latestClose": 4.55,
+    "latestClose": 4.6,
     "predictedClose": 4.18,
-    "pctChange": -8.13,
+    "pctChange": -9.13,
     "direction": "bearish",
     "bestModel": "LSTM",
     "confidence": 94.6

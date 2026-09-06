@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T08:00:46.883845+00:00",
+  "generatedAt": "2026-09-06T05:03:59.265011+00:00",
   "forecastDate": "2026-09-04",
   "lastRunAt": "2026-09-04T08:00:46+00:00",
   "status": "ok",
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 5,
+    "gainers": 2,
     "losers": 10,
-    "unchanged": 0
+    "unchanged": 3
   },
   "topGainer": {
-    "symbol": "SHLPH",
-    "name": "Pilipinas Shell Petroleum Corp.",
-    "sector": "Industrial",
-    "latestClose": 8.03,
-    "predictedClose": 8.25,
-    "pctChange": 2.74,
+    "symbol": "SECB",
+    "name": "Security Bank Corporation",
+    "sector": "Financials",
+    "latestClose": 64.3,
+    "predictedClose": 64.34,
+    "pctChange": 0.06,
     "direction": "bullish",
     "bestModel": "ARIMA",
-    "confidence": 97.7
+    "confidence": 90.1
   },
   "topLoser": {
-    "symbol": "NIKL",
-    "name": "Nickel Asia Corporation",
-    "sector": "Mining and Oil",
-    "latestClose": 4.6,
-    "predictedClose": 4.18,
-    "pctChange": -9.13,
+    "symbol": "MER",
+    "name": "Manila Electric Company",
+    "sector": "Industrial",
+    "latestClose": 462.0,
+    "predictedClose": 459.92,
+    "pctChange": -0.45,
     "direction": "bearish",
-    "bestModel": "LSTM",
-    "confidence": 94.6
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 94.4
   }
 }

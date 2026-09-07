@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-06T05:03:59.265011+00:00",
-  "forecastDate": "2026-09-04",
-  "lastRunAt": "2026-09-04T08:00:46+00:00",
+  "generatedAt": "2026-09-07T09:30:47.322747+00:00",
+  "forecastDate": "2026-09-07",
+  "lastRunAt": "2026-09-07T09:30:46+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,28 +28,28 @@
     }
   ],
   "marketSummary": {
-    "gainers": 2,
-    "losers": 10,
-    "unchanged": 3
+    "gainers": 5,
+    "losers": 9,
+    "unchanged": 1
   },
   "topGainer": {
-    "symbol": "SECB",
-    "name": "Security Bank Corporation",
-    "sector": "Financials",
-    "latestClose": 64.3,
-    "predictedClose": 64.34,
-    "pctChange": 0.06,
+    "symbol": "ALI",
+    "name": "Ayala Land, Inc.",
+    "sector": "Property",
+    "latestClose": 15.1,
+    "predictedClose": 15.26,
+    "pctChange": 1.06,
     "direction": "bullish",
-    "bestModel": "ARIMA",
-    "confidence": 90.1
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 98.5
   },
   "topLoser": {
     "symbol": "MER",
     "name": "Manila Electric Company",
     "sector": "Industrial",
-    "latestClose": 462.0,
+    "latestClose": 480.0,
     "predictedClose": 459.92,
-    "pctChange": -0.45,
+    "pctChange": -4.18,
     "direction": "bearish",
     "bestModel": "Lag-Informed Regression",
     "confidence": 94.4

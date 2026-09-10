@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-09T08:00:53.318148+00:00",
-  "forecastDate": "2026-09-09",
-  "lastRunAt": "2026-09-09T08:00:52+00:00",
+  "generatedAt": "2026-09-10T08:00:58.987788+00:00",
+  "forecastDate": "2026-09-10",
+  "lastRunAt": "2026-09-10T08:00:58+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 8,
-    "losers": 7,
+    "gainers": 9,
+    "losers": 6,
     "unchanged": 0
   },
   "topGainer": {
     "symbol": "ALI",
     "name": "Ayala Land, Inc.",
     "sector": "Property",
-    "latestClose": 14.74,
+    "latestClose": 14.7,
     "predictedClose": 15.26,
-    "pctChange": 3.53,
+    "pctChange": 3.81,
     "direction": "bullish",
     "bestModel": "Lag-Informed Regression",
     "confidence": 98.5
   },
   "topLoser": {
-    "symbol": "MER",
-    "name": "Manila Electric Company",
-    "sector": "Industrial",
-    "latestClose": 485.0,
-    "predictedClose": 459.92,
-    "pctChange": -5.17,
+    "symbol": "APX",
+    "name": "Apex Mining Co., Inc.",
+    "sector": "Mining and Oil",
+    "latestClose": 18.2,
+    "predictedClose": 17.18,
+    "pctChange": -5.6,
     "direction": "bearish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 94.4
+    "bestModel": "LSTM",
+    "confidence": 96.0
   }
 }

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-10T08:00:58.987788+00:00",
-  "forecastDate": "2026-09-10",
-  "lastRunAt": "2026-09-10T08:00:58+00:00",
+  "generatedAt": "2026-09-11T08:00:49.882757+00:00",
+  "forecastDate": "2026-09-11",
+  "lastRunAt": "2026-09-11T08:00:49+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,28 +28,28 @@
     }
   ],
   "marketSummary": {
-    "gainers": 9,
-    "losers": 6,
+    "gainers": 12,
+    "losers": 3,
     "unchanged": 0
   },
   "topGainer": {
-    "symbol": "ALI",
-    "name": "Ayala Land, Inc.",
-    "sector": "Property",
-    "latestClose": 14.7,
-    "predictedClose": 15.26,
-    "pctChange": 3.81,
+    "symbol": "MBT",
+    "name": "Metropolitan Bank & Trust Co.",
+    "sector": "Financials",
+    "latestClose": 63.05,
+    "predictedClose": 65.87,
+    "pctChange": 4.47,
     "direction": "bullish",
     "bestModel": "Lag-Informed Regression",
-    "confidence": 98.5
+    "confidence": 86.6
   },
   "topLoser": {
     "symbol": "APX",
     "name": "Apex Mining Co., Inc.",
     "sector": "Mining and Oil",
-    "latestClose": 18.2,
+    "latestClose": 18.16,
     "predictedClose": 17.18,
-    "pctChange": -5.6,
+    "pctChange": -5.4,
     "direction": "bearish",
     "bestModel": "LSTM",
     "confidence": 96.0

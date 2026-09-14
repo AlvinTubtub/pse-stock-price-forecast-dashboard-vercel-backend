@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-13T05:27:52.552203+00:00",
-  "forecastDate": "2026-09-11",
-  "lastRunAt": "2026-09-11T08:00:49+00:00",
+  "generatedAt": "2026-09-14T09:30:48.910415+00:00",
+  "forecastDate": "2026-09-14",
+  "lastRunAt": "2026-09-14T09:30:48+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,17 +28,17 @@
     }
   ],
   "marketSummary": {
-    "gainers": 4,
-    "losers": 8,
-    "unchanged": 3
+    "gainers": 6,
+    "losers": 9,
+    "unchanged": 0
   },
   "topGainer": {
     "symbol": "APX",
     "name": "Apex Mining Co., Inc.",
     "sector": "Mining and Oil",
-    "latestClose": 18.16,
+    "latestClose": 17.88,
     "predictedClose": 18.29,
-    "pctChange": 0.72,
+    "pctChange": 2.29,
     "direction": "bullish",
     "bestModel": "Lag-Informed Regression",
     "confidence": 95.8
@@ -47,9 +47,9 @@
     "symbol": "SHLPH",
     "name": "Pilipinas Shell Petroleum Corp.",
     "sector": "Industrial",
-    "latestClose": 7.82,
+    "latestClose": 8.1,
     "predictedClose": 7.8,
-    "pctChange": -0.26,
+    "pctChange": -3.7,
     "direction": "bearish",
     "bestModel": "ARIMA",
     "confidence": 97.5

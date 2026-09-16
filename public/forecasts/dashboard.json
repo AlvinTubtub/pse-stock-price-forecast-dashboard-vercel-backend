@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-15T08:00:44.261697+00:00",
-  "forecastDate": "2026-09-15",
-  "lastRunAt": "2026-09-15T08:00:43+00:00",
-  "status": "no_files",
+  "generatedAt": "2026-09-16T08:00:48.997441+00:00",
+  "forecastDate": "2026-09-16",
+  "lastRunAt": "2026-09-16T08:00:48+00:00",
+  "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
   "sectors": [
@@ -28,28 +28,28 @@
     }
   ],
   "marketSummary": {
-    "gainers": 6,
-    "losers": 9,
+    "gainers": 10,
+    "losers": 5,
     "unchanged": 0
   },
   "topGainer": {
-    "symbol": "APX",
-    "name": "Apex Mining Co., Inc.",
+    "symbol": "NIKL",
+    "name": "Nickel Asia Corporation",
     "sector": "Mining and Oil",
-    "latestClose": 17.88,
-    "predictedClose": 18.29,
-    "pctChange": 2.29,
+    "latestClose": 4.19,
+    "predictedClose": 4.54,
+    "pctChange": 8.35,
     "direction": "bullish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 95.8
+    "bestModel": "ARIMA",
+    "confidence": 94.0
   },
   "topLoser": {
     "symbol": "SHLPH",
     "name": "Pilipinas Shell Petroleum Corp.",
     "sector": "Industrial",
-    "latestClose": 8.1,
+    "latestClose": 7.98,
     "predictedClose": 7.8,
-    "pctChange": -3.7,
+    "pctChange": -2.26,
     "direction": "bearish",
     "bestModel": "ARIMA",
     "confidence": 97.5

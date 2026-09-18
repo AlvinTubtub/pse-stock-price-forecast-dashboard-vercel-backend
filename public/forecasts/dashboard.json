@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-17T08:00:57.265934+00:00",
-  "forecastDate": "2026-09-17",
-  "lastRunAt": "2026-09-17T08:00:56+00:00",
-  "status": "no_files",
+  "generatedAt": "2026-09-18T08:00:46.991347+00:00",
+  "forecastDate": "2026-09-18",
+  "lastRunAt": "2026-09-18T08:00:46+00:00",
+  "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
   "sectors": [
@@ -28,28 +28,28 @@
     }
   ],
   "marketSummary": {
-    "gainers": 10,
-    "losers": 5,
+    "gainers": 6,
+    "losers": 9,
     "unchanged": 0
   },
   "topGainer": {
     "symbol": "NIKL",
     "name": "Nickel Asia Corporation",
     "sector": "Mining and Oil",
-    "latestClose": 4.19,
+    "latestClose": 4.21,
     "predictedClose": 4.54,
-    "pctChange": 8.35,
+    "pctChange": 7.84,
     "direction": "bullish",
     "bestModel": "ARIMA",
     "confidence": 94.0
   },
   "topLoser": {
-    "symbol": "SHLPH",
-    "name": "Pilipinas Shell Petroleum Corp.",
-    "sector": "Industrial",
-    "latestClose": 7.98,
-    "predictedClose": 7.8,
-    "pctChange": -2.26,
+    "symbol": "SCC",
+    "name": "Semirara Mining and Power Corp.",
+    "sector": "Mining and Oil",
+    "latestClose": 20.05,
+    "predictedClose": 17.48,
+    "pctChange": -12.82,
     "direction": "bearish",
     "bestModel": "ARIMA",
     "confidence": 97.5

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T08:00:46.991347+00:00",
+  "generatedAt": "2026-09-20T05:17:24.368950+00:00",
   "forecastDate": "2026-09-18",
   "lastRunAt": "2026-09-18T08:00:46+00:00",
   "status": "ok",
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 6,
-    "losers": 9,
-    "unchanged": 0
+    "gainers": 7,
+    "losers": 7,
+    "unchanged": 1
   },
   "topGainer": {
-    "symbol": "NIKL",
-    "name": "Nickel Asia Corporation",
-    "sector": "Mining and Oil",
-    "latestClose": 4.21,
-    "predictedClose": 4.54,
-    "pctChange": 7.84,
+    "symbol": "JFC",
+    "name": "Jollibee Foods Corporation",
+    "sector": "Industrial",
+    "latestClose": 141.0,
+    "predictedClose": 141.43,
+    "pctChange": 0.3,
     "direction": "bullish",
     "bestModel": "ARIMA",
-    "confidence": 94.0
+    "confidence": 98.1
   },
   "topLoser": {
-    "symbol": "SCC",
-    "name": "Semirara Mining and Power Corp.",
-    "sector": "Mining and Oil",
-    "latestClose": 20.05,
-    "predictedClose": 17.48,
-    "pctChange": -12.82,
+    "symbol": "MER",
+    "name": "Manila Electric Company",
+    "sector": "Industrial",
+    "latestClose": 484.6,
+    "predictedClose": 483.01,
+    "pctChange": -0.33,
     "direction": "bearish",
-    "bestModel": "ARIMA",
-    "confidence": 97.5
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 95.2
   }
 }

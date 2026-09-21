@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-20T05:17:24.368950+00:00",
-  "forecastDate": "2026-09-18",
-  "lastRunAt": "2026-09-18T08:00:46+00:00",
+  "generatedAt": "2026-09-21T09:30:47.293712+00:00",
+  "forecastDate": "2026-09-21",
+  "lastRunAt": "2026-09-21T09:30:46+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 7,
-    "losers": 7,
+    "gainers": 11,
+    "losers": 3,
     "unchanged": 1
   },
   "topGainer": {
-    "symbol": "JFC",
-    "name": "Jollibee Foods Corporation",
-    "sector": "Industrial",
-    "latestClose": 141.0,
-    "predictedClose": 141.43,
-    "pctChange": 0.3,
+    "symbol": "SCC",
+    "name": "Semirara Mining and Power Corp.",
+    "sector": "Mining and Oil",
+    "latestClose": 16.7,
+    "predictedClose": 19.99,
+    "pctChange": 19.7,
     "direction": "bullish",
-    "bestModel": "ARIMA",
-    "confidence": 98.1
+    "bestModel": "LSTM",
+    "confidence": 97.4
   },
   "topLoser": {
-    "symbol": "MER",
-    "name": "Manila Electric Company",
+    "symbol": "SHLPH",
+    "name": "Pilipinas Shell Petroleum Corp.",
     "sector": "Industrial",
-    "latestClose": 484.6,
-    "predictedClose": 483.01,
-    "pctChange": -0.33,
+    "latestClose": 8.29,
+    "predictedClose": 7.95,
+    "pctChange": -4.1,
     "direction": "bearish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 95.2
+    "bestModel": "ARIMA",
+    "confidence": 97.5
   }
 }

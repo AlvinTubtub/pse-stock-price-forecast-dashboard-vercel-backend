@@ -2,10 +2,10 @@
   "symbol": "MEG",
   "name": "Megaworld Corporation",
   "sector": "Property",
-  "previousClose": 2.2,
+  "previousClose": 2.11,
   "predictedClose": 2.2,
-  "pesoChange": 0.0,
-  "pctChange": 0.0,
+  "pesoChange": 0.09,
+  "pctChange": 4.27,
   "direction": "bullish",
   "model": "ARIMA",
   "confidence": 91.9,
@@ -42,22 +42,6 @@
     "lstm": 2.19
   },
   "ohlcv": [
-    {
-      "date": "2025-12-19",
-      "open": 2.04,
-      "high": 2.07,
-      "low": 2.03,
-      "close": 2.03,
-      "volume": 5579000
-    },
-    {
-      "date": "2025-12-22",
-      "open": 2.04,
-      "high": 2.08,
-      "low": 2.03,
-      "close": 2.08,
-      "volume": 8988000
-    },
     {
       "date": "2025-12-23",
       "open": 2.08,
@@ -1481,6 +1465,22 @@
       "low": 2.18,
       "close": 2.2,
       "volume": 13583290
+    },
+    {
+      "date": "2026-09-18",
+      "open": 2.19,
+      "high": 2.2,
+      "low": 2.07,
+      "close": 2.07,
+      "volume": 164533000
+    },
+    {
+      "date": "2026-09-21",
+      "open": 2.1,
+      "high": 2.14,
+      "low": 2.1,
+      "close": 2.11,
+      "volume": 13937370
     }
   ],
   "backtestActual": [

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-21T09:30:47.293712+00:00",
-  "forecastDate": "2026-09-21",
-  "lastRunAt": "2026-09-21T09:30:46+00:00",
+  "generatedAt": "2026-09-22T08:00:52.951725+00:00",
+  "forecastDate": "2026-09-22",
+  "lastRunAt": "2026-09-22T08:00:52+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,17 +28,17 @@
     }
   ],
   "marketSummary": {
-    "gainers": 11,
-    "losers": 3,
-    "unchanged": 1
+    "gainers": 13,
+    "losers": 2,
+    "unchanged": 0
   },
   "topGainer": {
     "symbol": "SCC",
     "name": "Semirara Mining and Power Corp.",
     "sector": "Mining and Oil",
-    "latestClose": 16.7,
+    "latestClose": 16.22,
     "predictedClose": 19.99,
-    "pctChange": 19.7,
+    "pctChange": 23.24,
     "direction": "bullish",
     "bestModel": "LSTM",
     "confidence": 97.4
@@ -47,9 +47,9 @@
     "symbol": "SHLPH",
     "name": "Pilipinas Shell Petroleum Corp.",
     "sector": "Industrial",
-    "latestClose": 8.29,
+    "latestClose": 8.2,
     "predictedClose": 7.95,
-    "pctChange": -4.1,
+    "pctChange": -3.05,
     "direction": "bearish",
     "bestModel": "ARIMA",
     "confidence": 97.5

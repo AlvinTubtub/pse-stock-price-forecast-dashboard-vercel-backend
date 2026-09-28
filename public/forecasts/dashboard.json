@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-27T04:56:29.475203+00:00",
-  "forecastDate": "2026-09-25",
-  "lastRunAt": "2026-09-25T08:00:51+00:00",
+  "generatedAt": "2026-09-28T09:30:46.687488+00:00",
+  "forecastDate": "2026-09-28",
+  "lastRunAt": "2026-09-28T09:30:46+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 2,
-    "losers": 9,
-    "unchanged": 4
+    "gainers": 10,
+    "losers": 5,
+    "unchanged": 0
   },
   "topGainer": {
     "symbol": "APX",
     "name": "Apex Mining Co., Inc.",
     "sector": "Mining and Oil",
-    "latestClose": 18.0,
+    "latestClose": 17.1,
     "predictedClose": 18.05,
-    "pctChange": 0.28,
+    "pctChange": 5.56,
     "direction": "bullish",
     "bestModel": "LSTM",
     "confidence": 95.8
   },
   "topLoser": {
-    "symbol": "ICT",
-    "name": "Intl. Container Terminal Services",
-    "sector": "Services",
-    "latestClose": 920.0,
-    "predictedClose": 915.84,
-    "pctChange": -0.45,
+    "symbol": "SECB",
+    "name": "Security Bank Corporation",
+    "sector": "Financials",
+    "latestClose": 63.0,
+    "predictedClose": 62.03,
+    "pctChange": -1.54,
     "direction": "bearish",
-    "bestModel": "ARIMA",
-    "confidence": 98.7
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 89.0
   }
 }

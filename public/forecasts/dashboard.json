@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-29T08:00:52.049188+00:00",
-  "forecastDate": "2026-09-29",
-  "lastRunAt": "2026-09-29T08:00:51+00:00",
+  "generatedAt": "2026-09-30T08:00:48.014719+00:00",
+  "forecastDate": "2026-09-30",
+  "lastRunAt": "2026-09-30T08:00:47+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,17 +28,17 @@
     }
   ],
   "marketSummary": {
-    "gainers": 10,
-    "losers": 4,
-    "unchanged": 1
+    "gainers": 13,
+    "losers": 2,
+    "unchanged": 0
   },
   "topGainer": {
     "symbol": "SCC",
     "name": "Semirara Mining and Power Corp.",
     "sector": "Mining and Oil",
-    "latestClose": 14.2,
+    "latestClose": 13.7,
     "predictedClose": 15.26,
-    "pctChange": 7.46,
+    "pctChange": 11.39,
     "direction": "bullish",
     "bestModel": "ARIMA",
     "confidence": 97.4
@@ -47,9 +47,9 @@
     "symbol": "SECB",
     "name": "Security Bank Corporation",
     "sector": "Financials",
-    "latestClose": 62.85,
+    "latestClose": 63.0,
     "predictedClose": 62.03,
-    "pctChange": -1.3,
+    "pctChange": -1.54,
     "direction": "bearish",
     "bestModel": "Lag-Informed Regression",
     "confidence": 89.0

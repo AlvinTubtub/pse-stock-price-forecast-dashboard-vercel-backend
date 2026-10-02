@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-01T08:00:47.137473+00:00",
-  "forecastDate": "2026-10-01",
-  "lastRunAt": "2026-10-01T08:00:46+00:00",
+  "generatedAt": "2026-10-02T08:00:48.348900+00:00",
+  "forecastDate": "2026-10-02",
+  "lastRunAt": "2026-10-02T08:00:47+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -29,29 +29,29 @@
   ],
   "marketSummary": {
     "gainers": 13,
-    "losers": 1,
-    "unchanged": 1
+    "losers": 2,
+    "unchanged": 0
   },
   "topGainer": {
     "symbol": "SCC",
     "name": "Semirara Mining and Power Corp.",
     "sector": "Mining and Oil",
-    "latestClose": 14.1,
+    "latestClose": 13.4,
     "predictedClose": 15.26,
-    "pctChange": 8.23,
+    "pctChange": 13.88,
     "direction": "bullish",
     "bestModel": "ARIMA",
     "confidence": 97.4
   },
   "topLoser": {
-    "symbol": "SECB",
-    "name": "Security Bank Corporation",
-    "sector": "Financials",
-    "latestClose": 62.5,
-    "predictedClose": 62.03,
-    "pctChange": -0.75,
+    "symbol": "GLO",
+    "name": "Globe Telecom, Inc.",
+    "sector": "Services",
+    "latestClose": 1554.0,
+    "predictedClose": 1549.78,
+    "pctChange": -0.27,
     "direction": "bearish",
     "bestModel": "Lag-Informed Regression",
-    "confidence": 89.0
+    "confidence": 94.1
   }
 }

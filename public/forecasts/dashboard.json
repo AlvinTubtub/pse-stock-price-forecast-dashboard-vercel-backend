@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T08:00:48.348900+00:00",
+  "generatedAt": "2026-10-04T06:54:16.137171+00:00",
   "forecastDate": "2026-10-02",
   "lastRunAt": "2026-10-02T08:00:47+00:00",
   "status": "ok",
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 13,
-    "losers": 2,
-    "unchanged": 0
+    "gainers": 3,
+    "losers": 10,
+    "unchanged": 2
   },
   "topGainer": {
-    "symbol": "SCC",
-    "name": "Semirara Mining and Power Corp.",
-    "sector": "Mining and Oil",
-    "latestClose": 13.4,
-    "predictedClose": 15.26,
-    "pctChange": 13.88,
+    "symbol": "ICT",
+    "name": "Intl. Container Terminal Services",
+    "sector": "Services",
+    "latestClose": 860.0,
+    "predictedClose": 864.43,
+    "pctChange": 0.52,
     "direction": "bullish",
     "bestModel": "ARIMA",
-    "confidence": 97.4
+    "confidence": 98.7
   },
   "topLoser": {
-    "symbol": "GLO",
-    "name": "Globe Telecom, Inc.",
-    "sector": "Services",
-    "latestClose": 1554.0,
-    "predictedClose": 1549.78,
-    "pctChange": -0.27,
+    "symbol": "MER",
+    "name": "Manila Electric Company",
+    "sector": "Industrial",
+    "latestClose": 416.0,
+    "predictedClose": 414.5,
+    "pctChange": -0.36,
     "direction": "bearish",
     "bestModel": "Lag-Informed Regression",
-    "confidence": 94.1
+    "confidence": 96.3
   }
 }

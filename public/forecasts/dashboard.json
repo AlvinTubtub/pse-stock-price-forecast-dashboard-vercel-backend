@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-06T08:00:51.474472+00:00",
-  "forecastDate": "2026-10-06",
-  "lastRunAt": "2026-10-06T08:00:51+00:00",
+  "generatedAt": "2026-10-07T08:00:54.305696+00:00",
+  "forecastDate": "2026-10-07",
+  "lastRunAt": "2026-10-07T08:00:53+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,28 +28,28 @@
     }
   ],
   "marketSummary": {
-    "gainers": 8,
-    "losers": 7,
+    "gainers": 5,
+    "losers": 10,
     "unchanged": 0
   },
   "topGainer": {
-    "symbol": "APX",
-    "name": "Apex Mining Co., Inc.",
+    "symbol": "SCC",
+    "name": "Semirara Mining and Power Corp.",
     "sector": "Mining and Oil",
-    "latestClose": 16.96,
-    "predictedClose": 17.3,
-    "pctChange": 2.0,
+    "latestClose": 12.7,
+    "predictedClose": 13.37,
+    "pctChange": 5.28,
     "direction": "bullish",
-    "bestModel": "LSTM",
-    "confidence": 95.7
+    "bestModel": "ARIMA",
+    "confidence": 97.5
   },
   "topLoser": {
     "symbol": "ICT",
     "name": "Intl. Container Terminal Services",
     "sector": "Services",
-    "latestClose": 890.0,
+    "latestClose": 894.5,
     "predictedClose": 864.43,
-    "pctChange": -2.87,
+    "pctChange": -3.36,
     "direction": "bearish",
     "bestModel": "ARIMA",
     "confidence": 98.7

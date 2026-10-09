@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-08T08:00:47.507610+00:00",
-  "forecastDate": "2026-10-08",
-  "lastRunAt": "2026-10-08T08:00:47+00:00",
+  "generatedAt": "2026-10-09T08:00:50.765212+00:00",
+  "forecastDate": "2026-10-09",
+  "lastRunAt": "2026-10-09T08:00:50+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,17 +28,17 @@
     }
   ],
   "marketSummary": {
-    "gainers": 8,
-    "losers": 7,
+    "gainers": 5,
+    "losers": 10,
     "unchanged": 0
   },
   "topGainer": {
     "symbol": "SCC",
     "name": "Semirara Mining and Power Corp.",
     "sector": "Mining and Oil",
-    "latestClose": 11.0,
+    "latestClose": 11.6,
     "predictedClose": 13.37,
-    "pctChange": 21.55,
+    "pctChange": 15.26,
     "direction": "bullish",
     "bestModel": "ARIMA",
     "confidence": 97.5
@@ -47,9 +47,9 @@
     "symbol": "MEG",
     "name": "Megaworld Corporation",
     "sector": "Property",
-    "latestClose": 2.16,
+    "latestClose": 2.28,
     "predictedClose": 2.1,
-    "pctChange": -2.78,
+    "pctChange": -7.89,
     "direction": "bearish",
     "bestModel": "LSTM",
     "confidence": 90.8

@@ -8,10 +8,10 @@
   "MBT": "Lag-Informed Regression",
   "MEG": "LSTM",
   "MER": "Lag-Informed Regression",
-  "NIKL": "Lag-Informed Regression",
+  "NIKL": "ARIMA",
   "PGOLD": "ARIMA",
   "SCC": "ARIMA",
-  "SECB": "Lag-Informed Regression",
-  "SHLPH": "Lag-Informed Regression",
+  "SECB": "ARIMA",
+  "SHLPH": "ARIMA",
   "SMPH": "ARIMA"
 }

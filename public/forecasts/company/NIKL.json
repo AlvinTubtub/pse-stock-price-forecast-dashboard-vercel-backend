@@ -2,10 +2,10 @@
   "symbol": "NIKL",
   "name": "Nickel Asia Corporation",
   "sector": "Mining and Oil",
-  "previousClose": 3.85,
+  "previousClose": 3.79,
   "predictedClose": 3.9,
-  "pesoChange": 0.05,
-  "pctChange": 1.3,
+  "pesoChange": 0.11,
+  "pctChange": 2.9,
   "direction": "bullish",
   "model": "ARIMA",
   "confidence": 93.2,
@@ -42,14 +42,6 @@
     "lstm": 3.9
   },
   "ohlcv": [
-    {
-      "date": "2026-01-22",
-      "open": 4.51,
-      "high": 4.61,
-      "low": 4.51,
-      "close": 4.56,
-      "volume": 7710000
-    },
     {
       "date": "2026-01-23",
       "open": 4.56,
@@ -1481,6 +1473,14 @@
       "low": 3.82,
       "close": 3.85,
       "volume": 2734970
+    },
+    {
+      "date": "2026-10-15",
+      "open": 3.86,
+      "high": 3.86,
+      "low": 3.79,
+      "close": 3.79,
+      "volume": 6726230
     }
   ],
   "backtestActual": [

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-15T08:00:49.612273+00:00",
-  "forecastDate": "2026-10-15",
-  "lastRunAt": "2026-10-15T08:00:49+00:00",
+  "generatedAt": "2026-10-16T08:01:00.228525+00:00",
+  "forecastDate": "2026-10-16",
+  "lastRunAt": "2026-10-16T08:00:59+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,28 +28,28 @@
     }
   ],
   "marketSummary": {
-    "gainers": 9,
+    "gainers": 8,
     "losers": 6,
-    "unchanged": 0
+    "unchanged": 1
   },
   "topGainer": {
-    "symbol": "APX",
-    "name": "Apex Mining Co., Inc.",
-    "sector": "Mining and Oil",
-    "latestClose": 16.56,
-    "predictedClose": 17.61,
-    "pctChange": 6.34,
+    "symbol": "SHLPH",
+    "name": "Pilipinas Shell Petroleum Corp.",
+    "sector": "Industrial",
+    "latestClose": 7.84,
+    "predictedClose": 8.07,
+    "pctChange": 2.93,
     "direction": "bullish",
-    "bestModel": "LSTM",
-    "confidence": 95.6
+    "bestModel": "ARIMA",
+    "confidence": 97.1
   },
   "topLoser": {
     "symbol": "SMPH",
     "name": "SM Prime Holdings, Inc.",
     "sector": "Property",
-    "latestClose": 16.68,
+    "latestClose": 17.06,
     "predictedClose": 15.88,
-    "pctChange": -4.8,
+    "pctChange": -6.92,
     "direction": "bearish",
     "bestModel": "ARIMA",
     "confidence": 96.2

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T08:01:00.228525+00:00",
+  "generatedAt": "2026-10-18T05:32:53.637209+00:00",
   "forecastDate": "2026-10-16",
   "lastRunAt": "2026-10-16T08:00:59+00:00",
   "status": "ok",
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 8,
-    "losers": 6,
-    "unchanged": 1
+    "gainers": 4,
+    "losers": 8,
+    "unchanged": 3
   },
   "topGainer": {
-    "symbol": "SHLPH",
-    "name": "Pilipinas Shell Petroleum Corp.",
+    "symbol": "JFC",
+    "name": "Jollibee Foods Corporation",
     "sector": "Industrial",
-    "latestClose": 7.84,
-    "predictedClose": 8.07,
-    "pctChange": 2.93,
+    "latestClose": 142.0,
+    "predictedClose": 142.41,
+    "pctChange": 0.29,
     "direction": "bullish",
     "bestModel": "ARIMA",
-    "confidence": 97.1
+    "confidence": 98.0
   },
   "topLoser": {
-    "symbol": "SMPH",
-    "name": "SM Prime Holdings, Inc.",
-    "sector": "Property",
-    "latestClose": 17.06,
-    "predictedClose": 15.88,
-    "pctChange": -6.92,
+    "symbol": "MER",
+    "name": "Manila Electric Company",
+    "sector": "Industrial",
+    "latestClose": 447.6,
+    "predictedClose": 443.65,
+    "pctChange": -0.88,
     "direction": "bearish",
-    "bestModel": "ARIMA",
-    "confidence": 96.2
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 97.0
   }
 }

@@ -2,10 +2,10 @@
   "symbol": "SECB",
   "name": "Security Bank Corporation",
   "sector": "Financials",
-  "previousClose": 61.7,
+  "previousClose": 62.05,
   "predictedClose": 61.63,
-  "pesoChange": -0.07,
-  "pctChange": -0.11,
+  "pesoChange": -0.42,
+  "pctChange": -0.68,
   "direction": "bearish",
   "model": "Lag-Informed Regression",
   "confidence": 89.0,
@@ -42,14 +42,6 @@
     "lstm": 64.76
   },
   "ohlcv": [
-    {
-      "date": "2026-01-26",
-      "open": 67.4,
-      "high": 68.0,
-      "low": 66.6,
-      "close": 68.0,
-      "volume": 255190
-    },
     {
       "date": "2026-01-27",
       "open": 67.9,
@@ -1481,6 +1473,14 @@
       "low": 61.35,
       "close": 61.7,
       "volume": 11025391
+    },
+    {
+      "date": "2026-10-19",
+      "open": 61.7,
+      "high": 62.05,
+      "low": 61.45,
+      "close": 62.05,
+      "volume": 8077666
     }
   ],
   "backtestActual": [

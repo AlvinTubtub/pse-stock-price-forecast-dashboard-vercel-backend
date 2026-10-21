@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-20T08:00:43.003746+00:00",
-  "forecastDate": "2026-10-20",
-  "lastRunAt": "2026-10-20T08:00:42+00:00",
-  "status": "no_files",
+  "generatedAt": "2026-10-21T08:00:50.266917+00:00",
+  "forecastDate": "2026-10-21",
+  "lastRunAt": "2026-10-21T08:00:49+00:00",
+  "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
   "sectors": [
@@ -28,17 +28,17 @@
     }
   ],
   "marketSummary": {
-    "gainers": 5,
-    "losers": 10,
+    "gainers": 6,
+    "losers": 9,
     "unchanged": 0
   },
   "topGainer": {
     "symbol": "SCC",
     "name": "Semirara Mining and Power Corp.",
     "sector": "Mining and Oil",
-    "latestClose": 12.02,
+    "latestClose": 11.74,
     "predictedClose": 12.31,
-    "pctChange": 2.41,
+    "pctChange": 4.86,
     "direction": "bullish",
     "bestModel": "ARIMA",
     "confidence": 97.9
@@ -47,9 +47,9 @@
     "symbol": "SMPH",
     "name": "SM Prime Holdings, Inc.",
     "sector": "Property",
-    "latestClose": 17.4,
+    "latestClose": 18.08,
     "predictedClose": 16.98,
-    "pctChange": -2.41,
+    "pctChange": -6.08,
     "direction": "bearish",
     "bestModel": "ARIMA",
     "confidence": 96.2

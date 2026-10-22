@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-21T08:00:50.266917+00:00",
-  "forecastDate": "2026-10-21",
-  "lastRunAt": "2026-10-21T08:00:49+00:00",
+  "generatedAt": "2026-10-22T08:00:51.309357+00:00",
+  "forecastDate": "2026-10-22",
+  "lastRunAt": "2026-10-22T08:00:50+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,8 +28,8 @@
     }
   ],
   "marketSummary": {
-    "gainers": 6,
-    "losers": 9,
+    "gainers": 7,
+    "losers": 8,
     "unchanged": 0
   },
   "topGainer": {
@@ -47,9 +47,9 @@
     "symbol": "SMPH",
     "name": "SM Prime Holdings, Inc.",
     "sector": "Property",
-    "latestClose": 18.08,
+    "latestClose": 17.9,
     "predictedClose": 16.98,
-    "pctChange": -6.08,
+    "pctChange": -5.14,
     "direction": "bearish",
     "bestModel": "ARIMA",
     "confidence": 96.2

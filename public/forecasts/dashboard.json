@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-22T08:00:51.309357+00:00",
-  "forecastDate": "2026-10-22",
-  "lastRunAt": "2026-10-22T08:00:50+00:00",
+  "generatedAt": "2026-10-23T08:00:56.164640+00:00",
+  "forecastDate": "2026-10-23",
+  "lastRunAt": "2026-10-23T08:00:55+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -36,22 +36,22 @@
     "symbol": "SCC",
     "name": "Semirara Mining and Power Corp.",
     "sector": "Mining and Oil",
-    "latestClose": 11.74,
+    "latestClose": 11.6,
     "predictedClose": 12.31,
-    "pctChange": 4.86,
+    "pctChange": 6.12,
     "direction": "bullish",
     "bestModel": "ARIMA",
     "confidence": 97.9
   },
   "topLoser": {
-    "symbol": "SMPH",
-    "name": "SM Prime Holdings, Inc.",
-    "sector": "Property",
-    "latestClose": 17.9,
-    "predictedClose": 16.98,
-    "pctChange": -5.14,
+    "symbol": "NIKL",
+    "name": "Nickel Asia Corporation",
+    "sector": "Mining and Oil",
+    "latestClose": 3.9,
+    "predictedClose": 3.8,
+    "pctChange": -2.56,
     "direction": "bearish",
     "bestModel": "ARIMA",
-    "confidence": 96.2
+    "confidence": 93.3
   }
 }

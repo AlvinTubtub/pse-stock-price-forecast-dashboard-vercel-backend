@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-25T04:38:54.036913+00:00",
-  "forecastDate": "2026-10-23",
-  "lastRunAt": "2026-10-23T08:00:55+00:00",
+  "generatedAt": "2026-10-26T09:30:50.379110+00:00",
+  "forecastDate": "2026-10-26",
+  "lastRunAt": "2026-10-26T09:30:49+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 6,
-    "losers": 6,
-    "unchanged": 3
+    "gainers": 11,
+    "losers": 4,
+    "unchanged": 0
   },
   "topGainer": {
-    "symbol": "SMPH",
-    "name": "SM Prime Holdings, Inc.",
-    "sector": "Property",
-    "latestClose": 17.12,
-    "predictedClose": 17.24,
-    "pctChange": 0.7,
+    "symbol": "SCC",
+    "name": "Semirara Mining and Power Corp.",
+    "sector": "Mining and Oil",
+    "latestClose": 11.04,
+    "predictedClose": 11.6,
+    "pctChange": 5.07,
     "direction": "bullish",
     "bestModel": "ARIMA",
-    "confidence": 96.1
+    "confidence": 98.0
   },
   "topLoser": {
-    "symbol": "ALI",
-    "name": "Ayala Land, Inc.",
-    "sector": "Property",
-    "latestClose": 15.7,
-    "predictedClose": 15.68,
-    "pctChange": -0.13,
+    "symbol": "MER",
+    "name": "Manila Electric Company",
+    "sector": "Industrial",
+    "latestClose": 424.8,
+    "predictedClose": 420.08,
+    "pctChange": -1.11,
     "direction": "bearish",
     "bestModel": "Lag-Informed Regression",
-    "confidence": 97.9
+    "confidence": 97.2
   }
 }

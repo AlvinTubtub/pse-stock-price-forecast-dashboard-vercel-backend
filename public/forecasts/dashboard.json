@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-27T08:00:58.632698+00:00",
-  "forecastDate": "2026-10-27",
-  "lastRunAt": "2026-10-27T08:00:58+00:00",
+  "generatedAt": "2026-10-28T08:00:52.071891+00:00",
+  "forecastDate": "2026-10-28",
+  "lastRunAt": "2026-10-28T08:00:51+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,17 +28,17 @@
     }
   ],
   "marketSummary": {
-    "gainers": 7,
-    "losers": 8,
+    "gainers": 8,
+    "losers": 7,
     "unchanged": 0
   },
   "topGainer": {
     "symbol": "SCC",
     "name": "Semirara Mining and Power Corp.",
     "sector": "Mining and Oil",
-    "latestClose": 10.5,
+    "latestClose": 10.66,
     "predictedClose": 11.6,
-    "pctChange": 10.48,
+    "pctChange": 8.82,
     "direction": "bullish",
     "bestModel": "ARIMA",
     "confidence": 98.0
@@ -47,9 +47,9 @@
     "symbol": "MER",
     "name": "Manila Electric Company",
     "sector": "Industrial",
-    "latestClose": 441.6,
+    "latestClose": 429.8,
     "predictedClose": 420.08,
-    "pctChange": -4.87,
+    "pctChange": -2.26,
     "direction": "bearish",
     "bestModel": "Lag-Informed Regression",
     "confidence": 97.2

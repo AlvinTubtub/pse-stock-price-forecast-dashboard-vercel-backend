@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-28T08:00:52.071891+00:00",
-  "forecastDate": "2026-10-28",
-  "lastRunAt": "2026-10-28T08:00:51+00:00",
+  "generatedAt": "2026-10-29T08:00:51.702648+00:00",
+  "forecastDate": "2026-10-29",
+  "lastRunAt": "2026-10-29T08:00:51+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,8 +28,8 @@
     }
   ],
   "marketSummary": {
-    "gainers": 8,
-    "losers": 7,
+    "gainers": 10,
+    "losers": 5,
     "unchanged": 0
   },
   "topGainer": {
@@ -44,14 +44,14 @@
     "confidence": 98.0
   },
   "topLoser": {
-    "symbol": "MER",
-    "name": "Manila Electric Company",
-    "sector": "Industrial",
-    "latestClose": 429.8,
-    "predictedClose": 420.08,
-    "pctChange": -2.26,
+    "symbol": "SMPH",
+    "name": "SM Prime Holdings, Inc.",
+    "sector": "Property",
+    "latestClose": 17.56,
+    "predictedClose": 17.24,
+    "pctChange": -1.82,
     "direction": "bearish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 97.2
+    "bestModel": "ARIMA",
+    "confidence": 96.1
   }
 }

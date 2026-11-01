@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T08:00:57.293225+00:00",
+  "generatedAt": "2026-11-01T07:05:39.301030+00:00",
   "forecastDate": "2026-10-30",
   "lastRunAt": "2026-10-30T08:00:56+00:00",
   "status": "ok",
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 9,
+    "gainers": 6,
     "losers": 5,
-    "unchanged": 1
+    "unchanged": 4
   },
   "topGainer": {
-    "symbol": "SCC",
-    "name": "Semirara Mining and Power Corp.",
-    "sector": "Mining and Oil",
-    "latestClose": 10.74,
-    "predictedClose": 11.6,
-    "pctChange": 8.01,
+    "symbol": "BPI",
+    "name": "Bank of the Philippine Islands",
+    "sector": "Financials",
+    "latestClose": 94.0,
+    "predictedClose": 94.15,
+    "pctChange": 0.16,
     "direction": "bullish",
-    "bestModel": "ARIMA",
-    "confidence": 98.0
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 94.7
   },
   "topLoser": {
-    "symbol": "SMPH",
-    "name": "SM Prime Holdings, Inc.",
-    "sector": "Property",
-    "latestClose": 17.5,
-    "predictedClose": 17.24,
-    "pctChange": -1.49,
+    "symbol": "MER",
+    "name": "Manila Electric Company",
+    "sector": "Industrial",
+    "latestClose": 423.0,
+    "predictedClose": 422.43,
+    "pctChange": -0.13,
     "direction": "bearish",
-    "bestModel": "ARIMA",
-    "confidence": 96.1
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 97.5
   }
 }

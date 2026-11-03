@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-02T09:30:57.156523+00:00",
-  "forecastDate": "2026-11-02",
-  "lastRunAt": "2026-11-02T09:30:56+00:00",
-  "status": "no_files",
+  "generatedAt": "2026-11-03T08:00:58.942107+00:00",
+  "forecastDate": "2026-11-03",
+  "lastRunAt": "2026-11-03T08:00:58+00:00",
+  "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
   "sectors": [
@@ -29,29 +29,29 @@
   ],
   "marketSummary": {
     "gainers": 6,
-    "losers": 5,
-    "unchanged": 4
+    "losers": 8,
+    "unchanged": 1
   },
   "topGainer": {
-    "symbol": "BPI",
-    "name": "Bank of the Philippine Islands",
-    "sector": "Financials",
-    "latestClose": 94.0,
-    "predictedClose": 94.15,
-    "pctChange": 0.16,
+    "symbol": "ICT",
+    "name": "Intl. Container Terminal Services",
+    "sector": "Services",
+    "latestClose": 811.5,
+    "predictedClose": 839.86,
+    "pctChange": 3.49,
     "direction": "bullish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 94.7
+    "bestModel": "ARIMA",
+    "confidence": 98.4
   },
   "topLoser": {
-    "symbol": "MER",
-    "name": "Manila Electric Company",
-    "sector": "Industrial",
-    "latestClose": 423.0,
-    "predictedClose": 422.43,
-    "pctChange": -0.13,
+    "symbol": "MEG",
+    "name": "Megaworld Corporation",
+    "sector": "Property",
+    "latestClose": 2.3,
+    "predictedClose": 2.25,
+    "pctChange": -2.17,
     "direction": "bearish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 97.5
+    "bestModel": "ARIMA",
+    "confidence": 90.6
   }
 }

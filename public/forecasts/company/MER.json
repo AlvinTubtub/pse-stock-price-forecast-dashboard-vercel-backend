@@ -2,10 +2,10 @@
   "symbol": "MER",
   "name": "Manila Electric Company",
   "sector": "Industrial",
-  "previousClose": 423.0,
+  "previousClose": 426.8,
   "predictedClose": 422.43,
-  "pesoChange": -0.57,
-  "pctChange": -0.13,
+  "pesoChange": -4.37,
+  "pctChange": -1.02,
   "direction": "bearish",
   "model": "Lag-Informed Regression",
   "confidence": 97.5,
@@ -42,14 +42,6 @@
     "lstm": 406.09
   },
   "ohlcv": [
-    {
-      "date": "2026-02-09",
-      "open": 599.0,
-      "high": 611.0,
-      "low": 599.0,
-      "close": 600.0,
-      "volume": 167570
-    },
     {
       "date": "2026-02-10",
       "open": 608.0,
@@ -1481,6 +1473,14 @@
       "low": 420.0,
       "close": 423.0,
       "volume": 64250724
+    },
+    {
+      "date": "2026-11-03",
+      "open": 424.8,
+      "high": 430.0,
+      "low": 421.8,
+      "close": 426.8,
+      "volume": 90725986
     }
   ],
   "backtestActual": [

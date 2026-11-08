@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T08:01:03.091881+00:00",
+  "generatedAt": "2026-11-08T06:55:58.640848+00:00",
   "forecastDate": "2026-11-06",
   "lastRunAt": "2026-11-06T08:01:02+00:00",
   "status": "ok",
@@ -29,29 +29,29 @@
   ],
   "marketSummary": {
     "gainers": 4,
-    "losers": 11,
-    "unchanged": 0
+    "losers": 9,
+    "unchanged": 2
   },
   "topGainer": {
-    "symbol": "GLO",
-    "name": "Globe Telecom, Inc.",
-    "sector": "Services",
-    "latestClose": 1478.0,
-    "predictedClose": 1529.66,
-    "pctChange": 3.5,
+    "symbol": "NIKL",
+    "name": "Nickel Asia Corporation",
+    "sector": "Mining and Oil",
+    "latestClose": 3.85,
+    "predictedClose": 3.86,
+    "pctChange": 0.26,
     "direction": "bullish",
-    "bestModel": "ARIMA",
-    "confidence": 93.6
+    "bestModel": "LSTM",
+    "confidence": 93.4
   },
   "topLoser": {
-    "symbol": "APX",
-    "name": "Apex Mining Co., Inc.",
-    "sector": "Mining and Oil",
-    "latestClose": 16.74,
-    "predictedClose": 15.49,
-    "pctChange": -7.47,
+    "symbol": "MER",
+    "name": "Manila Electric Company",
+    "sector": "Industrial",
+    "latestClose": 446.0,
+    "predictedClose": 444.4,
+    "pctChange": -0.36,
     "direction": "bearish",
-    "bestModel": "LSTM",
-    "confidence": 95.2
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 97.6
   }
 }

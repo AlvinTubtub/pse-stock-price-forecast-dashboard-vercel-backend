@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-10T08:00:56.150934+00:00",
-  "forecastDate": "2026-11-10",
-  "lastRunAt": "2026-11-10T08:00:55+00:00",
+  "generatedAt": "2026-11-11T08:01:03.848341+00:00",
+  "forecastDate": "2026-11-11",
+  "lastRunAt": "2026-11-11T08:01:03+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,28 +28,28 @@
     }
   ],
   "marketSummary": {
-    "gainers": 10,
-    "losers": 5,
+    "gainers": 7,
+    "losers": 8,
     "unchanged": 0
   },
   "topGainer": {
-    "symbol": "SMPH",
-    "name": "SM Prime Holdings, Inc.",
-    "sector": "Property",
-    "latestClose": 17.0,
-    "predictedClose": 17.79,
-    "pctChange": 4.65,
+    "symbol": "ICT",
+    "name": "Intl. Container Terminal Services",
+    "sector": "Services",
+    "latestClose": 780.0,
+    "predictedClose": 816.68,
+    "pctChange": 4.7,
     "direction": "bullish",
     "bestModel": "ARIMA",
-    "confidence": 96.0
+    "confidence": 98.3
   },
   "topLoser": {
     "symbol": "APX",
     "name": "Apex Mining Co., Inc.",
     "sector": "Mining and Oil",
-    "latestClose": 17.9,
+    "latestClose": 17.56,
     "predictedClose": 16.75,
-    "pctChange": -6.42,
+    "pctChange": -4.61,
     "direction": "bearish",
     "bestModel": "LSTM",
     "confidence": 94.8

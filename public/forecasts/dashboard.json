@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-11T08:01:03.848341+00:00",
-  "forecastDate": "2026-11-11",
-  "lastRunAt": "2026-11-11T08:01:03+00:00",
+  "generatedAt": "2026-11-12T08:00:56.214752+00:00",
+  "forecastDate": "2026-11-12",
+  "lastRunAt": "2026-11-12T08:00:55+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 7,
-    "losers": 8,
-    "unchanged": 0
+    "gainers": 11,
+    "losers": 3,
+    "unchanged": 1
   },
   "topGainer": {
-    "symbol": "ICT",
-    "name": "Intl. Container Terminal Services",
-    "sector": "Services",
-    "latestClose": 780.0,
-    "predictedClose": 816.68,
-    "pctChange": 4.7,
+    "symbol": "SCC",
+    "name": "Semirara Mining and Power Corp.",
+    "sector": "Mining and Oil",
+    "latestClose": 10.24,
+    "predictedClose": 10.81,
+    "pctChange": 5.57,
     "direction": "bullish",
     "bestModel": "ARIMA",
     "confidence": 98.3
   },
   "topLoser": {
-    "symbol": "APX",
-    "name": "Apex Mining Co., Inc.",
-    "sector": "Mining and Oil",
-    "latestClose": 17.56,
-    "predictedClose": 16.75,
-    "pctChange": -4.61,
+    "symbol": "JFC",
+    "name": "Jollibee Foods Corporation",
+    "sector": "Industrial",
+    "latestClose": 155.0,
+    "predictedClose": 148.97,
+    "pctChange": -3.89,
     "direction": "bearish",
-    "bestModel": "LSTM",
-    "confidence": 94.8
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 97.6
   }
 }

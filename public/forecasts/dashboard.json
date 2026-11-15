@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T08:00:53.092342+00:00",
+  "generatedAt": "2026-11-15T06:16:38.323203+00:00",
   "forecastDate": "2026-11-13",
   "lastRunAt": "2026-11-13T08:00:52+00:00",
   "status": "no_files",
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 11,
-    "losers": 3,
-    "unchanged": 1
+    "gainers": 3,
+    "losers": 10,
+    "unchanged": 2
   },
   "topGainer": {
-    "symbol": "SCC",
-    "name": "Semirara Mining and Power Corp.",
-    "sector": "Mining and Oil",
-    "latestClose": 10.24,
-    "predictedClose": 10.81,
-    "pctChange": 5.57,
+    "symbol": "ICT",
+    "name": "Intl. Container Terminal Services",
+    "sector": "Services",
+    "latestClose": 780.0,
+    "predictedClose": 780.93,
+    "pctChange": 0.12,
     "direction": "bullish",
     "bestModel": "ARIMA",
-    "confidence": 98.3
+    "confidence": 98.2
   },
   "topLoser": {
-    "symbol": "JFC",
-    "name": "Jollibee Foods Corporation",
+    "symbol": "MER",
+    "name": "Manila Electric Company",
     "sector": "Industrial",
-    "latestClose": 155.0,
-    "predictedClose": 148.97,
-    "pctChange": -3.89,
+    "latestClose": 430.0,
+    "predictedClose": 428.04,
+    "pctChange": -0.46,
     "direction": "bearish",
     "bestModel": "Lag-Informed Regression",
-    "confidence": 97.6
+    "confidence": 97.7
   }
 }

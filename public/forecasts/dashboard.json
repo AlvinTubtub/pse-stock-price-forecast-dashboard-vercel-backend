@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-15T06:16:38.323203+00:00",
-  "forecastDate": "2026-11-13",
-  "lastRunAt": "2026-11-13T08:00:52+00:00",
-  "status": "no_files",
+  "generatedAt": "2026-11-16T09:31:01.318920+00:00",
+  "forecastDate": "2026-11-16",
+  "lastRunAt": "2026-11-16T09:31:00+00:00",
+  "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
   "sectors": [
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 3,
-    "losers": 10,
-    "unchanged": 2
+    "gainers": 14,
+    "losers": 1,
+    "unchanged": 0
   },
   "topGainer": {
     "symbol": "ICT",
     "name": "Intl. Container Terminal Services",
     "sector": "Services",
-    "latestClose": 780.0,
+    "latestClose": 726.0,
     "predictedClose": 780.93,
-    "pctChange": 0.12,
+    "pctChange": 7.57,
     "direction": "bullish",
     "bestModel": "ARIMA",
     "confidence": 98.2
   },
   "topLoser": {
-    "symbol": "MER",
-    "name": "Manila Electric Company",
-    "sector": "Industrial",
-    "latestClose": 430.0,
-    "predictedClose": 428.04,
-    "pctChange": -0.46,
+    "symbol": "PGOLD",
+    "name": "Puregold Price Club, Inc.",
+    "sector": "Services",
+    "latestClose": 39.75,
+    "predictedClose": 38.93,
+    "pctChange": -2.06,
     "direction": "bearish",
-    "bestModel": "Lag-Informed Regression",
-    "confidence": 97.7
+    "bestModel": "ARIMA",
+    "confidence": 90.1
   }
 }

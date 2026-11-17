@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-16T09:31:01.318920+00:00",
-  "forecastDate": "2026-11-16",
-  "lastRunAt": "2026-11-16T09:31:00+00:00",
+  "generatedAt": "2026-11-17T08:00:59.209550+00:00",
+  "forecastDate": "2026-11-17",
+  "lastRunAt": "2026-11-17T08:00:58+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,17 +28,17 @@
     }
   ],
   "marketSummary": {
-    "gainers": 14,
-    "losers": 1,
+    "gainers": 12,
+    "losers": 3,
     "unchanged": 0
   },
   "topGainer": {
     "symbol": "ICT",
     "name": "Intl. Container Terminal Services",
     "sector": "Services",
-    "latestClose": 726.0,
+    "latestClose": 718.0,
     "predictedClose": 780.93,
-    "pctChange": 7.57,
+    "pctChange": 8.76,
     "direction": "bullish",
     "bestModel": "ARIMA",
     "confidence": 98.2
@@ -47,9 +47,9 @@
     "symbol": "PGOLD",
     "name": "Puregold Price Club, Inc.",
     "sector": "Services",
-    "latestClose": 39.75,
+    "latestClose": 40.1,
     "predictedClose": 38.93,
-    "pctChange": -2.06,
+    "pctChange": -2.92,
     "direction": "bearish",
     "bestModel": "ARIMA",
     "confidence": 90.1

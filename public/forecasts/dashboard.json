@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-18T08:00:53.542553+00:00",
-  "forecastDate": "2026-11-18",
-  "lastRunAt": "2026-11-18T08:00:53+00:00",
-  "status": "no_files",
+  "generatedAt": "2026-11-19T08:00:52.210560+00:00",
+  "forecastDate": "2026-11-19",
+  "lastRunAt": "2026-11-19T08:00:51+00:00",
+  "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
   "sectors": [
@@ -28,28 +28,28 @@
     }
   ],
   "marketSummary": {
-    "gainers": 12,
-    "losers": 3,
+    "gainers": 13,
+    "losers": 2,
     "unchanged": 0
   },
   "topGainer": {
-    "symbol": "ICT",
-    "name": "Intl. Container Terminal Services",
-    "sector": "Services",
-    "latestClose": 718.0,
-    "predictedClose": 780.93,
-    "pctChange": 8.76,
+    "symbol": "SCC",
+    "name": "Semirara Mining and Power Corp.",
+    "sector": "Mining and Oil",
+    "latestClose": 8.68,
+    "predictedClose": 10.23,
+    "pctChange": 17.86,
     "direction": "bullish",
-    "bestModel": "ARIMA",
-    "confidence": 98.2
+    "bestModel": "Lag-Informed Regression",
+    "confidence": 98.4
   },
   "topLoser": {
     "symbol": "PGOLD",
     "name": "Puregold Price Club, Inc.",
     "sector": "Services",
-    "latestClose": 40.1,
+    "latestClose": 40.2,
     "predictedClose": 38.93,
-    "pctChange": -2.92,
+    "pctChange": -3.16,
     "direction": "bearish",
     "bestModel": "ARIMA",
     "confidence": 90.1

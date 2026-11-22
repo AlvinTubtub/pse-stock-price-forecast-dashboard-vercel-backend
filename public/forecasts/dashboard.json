@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T08:00:53.998136+00:00",
+  "generatedAt": "2026-11-22T06:37:51.273833+00:00",
   "forecastDate": "2026-11-20",
   "lastRunAt": "2026-11-20T08:00:53+00:00",
   "status": "ok",
@@ -28,30 +28,30 @@
     }
   ],
   "marketSummary": {
-    "gainers": 13,
-    "losers": 2,
-    "unchanged": 0
+    "gainers": 6,
+    "losers": 8,
+    "unchanged": 1
   },
   "topGainer": {
-    "symbol": "SCC",
-    "name": "Semirara Mining and Power Corp.",
-    "sector": "Mining and Oil",
-    "latestClose": 8.34,
-    "predictedClose": 10.23,
-    "pctChange": 22.66,
+    "symbol": "MER",
+    "name": "Manila Electric Company",
+    "sector": "Industrial",
+    "latestClose": 378.0,
+    "predictedClose": 380.14,
+    "pctChange": 0.57,
     "direction": "bullish",
     "bestModel": "Lag-Informed Regression",
-    "confidence": 98.4
+    "confidence": 97.9
   },
   "topLoser": {
-    "symbol": "PGOLD",
-    "name": "Puregold Price Club, Inc.",
+    "symbol": "ICT",
+    "name": "Intl. Container Terminal Services",
     "sector": "Services",
-    "latestClose": 39.75,
-    "predictedClose": 38.93,
-    "pctChange": -2.06,
+    "latestClose": 668.0,
+    "predictedClose": 663.02,
+    "pctChange": -0.75,
     "direction": "bearish",
-    "bestModel": "ARIMA",
-    "confidence": 90.1
+    "bestModel": "LSTM",
+    "confidence": 98.0
   }
 }

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-23T09:30:51.001599+00:00",
-  "forecastDate": "2026-11-23",
-  "lastRunAt": "2026-11-23T09:30:50+00:00",
+  "generatedAt": "2026-11-24T08:00:56.042262+00:00",
+  "forecastDate": "2026-11-24",
+  "lastRunAt": "2026-11-24T08:00:55+00:00",
   "status": "ok",
   "totalCompanies": 15,
   "missingCompanies": [],
@@ -28,17 +28,17 @@
     }
   ],
   "marketSummary": {
-    "gainers": 9,
-    "losers": 6,
+    "gainers": 10,
+    "losers": 5,
     "unchanged": 0
   },
   "topGainer": {
     "symbol": "MER",
     "name": "Manila Electric Company",
     "sector": "Industrial",
-    "latestClose": 365.6,
+    "latestClose": 360.0,
     "predictedClose": 380.14,
-    "pctChange": 3.98,
+    "pctChange": 5.59,
     "direction": "bullish",
     "bestModel": "Lag-Informed Regression",
     "confidence": 97.9
@@ -47,9 +47,9 @@
     "symbol": "ICT",
     "name": "Intl. Container Terminal Services",
     "sector": "Services",
-    "latestClose": 700.0,
+    "latestClose": 730.0,
     "predictedClose": 663.02,
-    "pctChange": -5.28,
+    "pctChange": -9.18,
     "direction": "bearish",
     "bestModel": "LSTM",
     "confidence": 98.0
